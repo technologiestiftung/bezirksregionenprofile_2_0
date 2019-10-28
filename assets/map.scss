@@ -1,0 +1,46 @@
+
+/*
+.map-container {
+  position: relative;
+  padding-bottom: 100%;
+
+  .map-container-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+*/
+
+.mapboxgl-popup-tip {
+  opacity: 0;
+  z-index: 100;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 0px !important;
+  border-left: 3px solid $color-default;
+  z-index: 1000;
+  font-size: 12px;
+}
+
+
+.map-dropdown-wrapper {
+  position: relative;
+
+  .map-dropdown {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    // dropdown activator
+    button {
+      min-width: 300px;
+    }
+  }
+}

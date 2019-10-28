@@ -1,0 +1,20 @@
+{
+  "version": 8,
+  "name": "nostyle",
+  "sources": {},
+  "metadata": {
+    "copyright":"Copyright (c) 2016, KlokanTech.com & OpenMapTiles contributors. Copyright (c) 2015, CartoDB Inc. All rights reserved. Derived from 'CartoDB Basemaps' (https://github.com/CartoDB/CartoDB-basemaps) designed by Stamen and Paul Norman for CartoDB Inc., licensed under CC-BY 3.0.",
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "mapbox:groups": {}
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#F5F5F5"
+      }
+    }
+  ]
+}

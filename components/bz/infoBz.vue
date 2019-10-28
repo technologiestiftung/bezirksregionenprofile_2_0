@@ -1,0 +1,201 @@
+<template>
+  <div class="pa-3 pa-sm-6 pa-md-8 pa-lg-12 h-100">
+    <v-row class="align-center">
+      <v-col cols="12" lg="5">
+        <h3>Themen & Daten</h3>
+      </v-col>
+      <v-col cols="12" lg="7" class="d-flex justify-lg-end align-center bz-bzr-toggle">
+        <div v-if="currentBzr">
+          <b class="pr-3">Vergleichen mit: </b>
+          <v-btn-toggle v-model="compareSelected" color="primary">
+            <v-btn value="bezirk">
+              Bezirk
+            </v-btn>
+            <v-btn value="berlin">
+              Berlin
+            </v-btn>
+          </v-btn-toggle>
+        </div>
+      </v-col>
+    </v-row>
+    <div class="datenprofile-container">
+      <v-btn v-if="currentBzr && currentBzIndikatorenBzrData[currentBzr.url]" :to="bzrUrl" color="primary" nuxt>
+        <v-icon class="mr-3">mdi-arrow-right</v-icon>zum Datenprofil
+        {{ currentBzr.name }}
+      </v-btn>
+    </div>
+    <div class="indikatoren-menu pt-6">
+      <v-row v-if="indDataParsed">
+        <v-col v-for="indikator in indikatorenOverview" :key="indikator.name" :class="activeInd == indikator.id ? 'active' : ''">
+          <v-btn text class="w-100" :class="indikator.class" @click="activeInd = parseInt(indikator.id)">{{
+            indikator.name
+          }}</v-btn>
+        </v-col>
+      </v-row>
+      <v-row v-else>
+        <v-col>
+          <v-alert type="error">
+            Daten für diese Bezirksregion konnten nicht geladen werden.
+          </v-alert>
+        </v-col>
+      </v-row>
+    </div>
+    <v-row v-if="indDataParsed">
+      <v-col v-for="(indikator, index) in indikatorenOverview[activeInd].indikatoren" :key="index" cols="12" class="viz pb-5">
+        <div class="d-flex justify-space-between align-end pb-2">
+          <div>
+            <h3 class="mb-0 pr-5">{{ indikator['name'] }}</h3>
+            <div class="info-text">{{ indikator['text-sm'] }}</div>
+          </div>
+          <v-tooltip left>
+            <template v-slot:activator="{ on }">
+              <v-btn color="primary" text icon v-on="on"><v-icon>mdi-information</v-icon></v-btn>
+            </template>
+            <span class="tooltip-text"
+              >{{ indikator['text-lg'] + ': ' }}
+              <b>{{ indDataParsed[indikator.name].val }}</b>
+              {{ indikator['unit'] }}
+            </span>
+          </v-tooltip>
+        </div>
+        <transition name="fade">
+          <viz-bz
+            :active-ind-class="activeIndClass"
+            :indikator-value="indDataParsed[indikator.name].val"
+            :indikator-value-percent="indDataParsed[indikator.name].valPercent"
+            :average-value="indDataParsed[indikator.name].average"
+            :active-ind="activeInd"
+            :compare-selected-name="compareSelectedName"
+            :current-bzr="currentBzr"
+          >
+          </viz-bz>
+        </transition>
+      </v-col>
+    </v-row>
+  </div>
+</template>
+
+<script>
+import { mapState } from 'vuex'
+import vizBz from '~/components/bz/VizBz.vue'
+export default {
+  components: { vizBz },
+  props: {},
+  data() {
+    return {
+      activeInd: 1,
+      compareSelected: 'berlin'
+    }
+  },
+  computed: {
+    ...mapState(['indikatorenOverview', 'currentBzIndikatorenData', 'currentBzIndikatorenBzrData', 'currentBzr', 'currentBz']),
+    bzrUrl() {
+      let u = ''
+      if (this.currentBz && this.currentBzr) {
+        u = this.currentBz.url + '/' + this.currentBzr.url
+      }
+      return u
+    },
+    compareSelectedName() {
+      return this.compareSelected === 'bezirk' && this.currentBzr ? 'Bezirk' : 'Berlin'
+    },
+    indData() {
+      return this.currentBzr ? this.currentBzIndikatorenBzrData[this.currentBzr.url] : this.currentBzIndikatorenData
+    },
+    activeIndClass() {
+      return `indGr${this.activeInd}`
+    },
+    indDataParsed() {
+      if (this.indData) {
+        const newIndData = {}
+        const indCopy = JSON.parse(JSON.stringify(this.indData))
+
+        for (const x in indCopy) {
+          newIndData[x] = indCopy[x]
+          // compare with bz
+          if (this.compareSelected === 'bezirk' && this.currentBzr) {
+            const currentVal = parseFloat(this.indData[x].val)
+            const averageVal = parseFloat(this.currentBzIndikatorenData[x].val)
+            const deviationVal = ((currentVal - averageVal) / averageVal) * 100 // Abweichung vom Durchschnittswert
+            newIndData[x].val = currentVal
+            newIndData[x].valPercent = deviationVal
+            newIndData[x].average = averageVal
+            newIndData[x].phase = newIndData[x].phaseBz
+          }
+          // compare with berlin
+          else {
+            let average
+            for (const indClass in this.indikatorenOverview) {
+              if (this.indikatorenOverview[indClass].indikatoren[x]) {
+                average = this.indikatorenOverview[indClass].indikatoren[x].average
+              }
+            }
+            const averageVal = parseFloat(average)
+            const currentVal = parseFloat(newIndData[x].val)
+            const deviationVal = ((currentVal - averageVal) / averageVal) * 100 // Abweichung vom Durchschnittswert
+
+            newIndData[x].val = currentVal
+            newIndData[x].valPercent = deviationVal
+            newIndData[x].average = averageVal
+            newIndData[x].phase = newIndData[x].phaseB
+          }
+        }
+        return newIndData
+      } else {
+        return null
+      }
+    }
+  },
+  mounted() {},
+  methods: {}
+}
+</script>
+
+<style lang="scss" scoped>
+.indikatoren-menu {
+  button {
+    border-bottom: 2px solid #000;
+    border-radius: 0px;
+  }
+}
+
+.datenprofile-container {
+  height: 36px;
+}
+
+.bz-bzr-toggle {
+  min-height: 80px;
+}
+
+.tooltip-text {
+  max-width: 300px;
+  display: block;
+}
+
+.active {
+  .indGr1 {
+    color: $color-indGr1;
+    border-bottom: 3px solid $color-indGr1;
+  }
+  .indGr2 {
+    color: $color-indGr2;
+    border-bottom: 3px solid $color-indGr2;
+  }
+  .indGr3 {
+    color: $color-indGr3;
+    border-bottom: 3px solid $color-indGr3;
+  }
+  .indGr4 {
+    color: $color-indGr4;
+    border-bottom: 3px solid $color-indGr4;
+  }
+  .indGr5 {
+    color: $color-indGr5;
+    border-bottom: 3px solid $color-indGr5;
+  }
+  .indGr6 {
+    color: $color-indGr6;
+    border-bottom: 3px solid $color-indGr6;
+  }
+}
+</style>
