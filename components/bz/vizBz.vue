@@ -27,7 +27,6 @@
 
 <script>
 import * as d3 from 'd3'
-import idGenerator from '~/assets/js/idGenerator.js'
 
 export default {
   props: {
@@ -52,12 +51,14 @@ export default {
     averageValue: {
       type: Number,
       default: 0
+    },
+    id: {
+      type: String,
+      default: ''
     }
   },
   data() {
-    return {
-      id: idGenerator()
-    }
+    return {}
   },
   computed: {
     compareWidth() {

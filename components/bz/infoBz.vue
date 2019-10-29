@@ -62,6 +62,7 @@
         </div>
         <transition name="fade">
           <viz-bz
+            :id="'vizbiz-' + index"
             :active-ind-class="activeIndClass"
             :indikator-value="indDataParsed[indikator.name].val"
             :indikator-value-percent="indDataParsed[indikator.name].valPercent"
