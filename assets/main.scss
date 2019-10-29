@@ -67,36 +67,7 @@ h3{
     }
 }
 
-// footer
-footer.v-footer{
-    border-top: 1px solid #666;
-    background-color: #dcdcdc;
-    position: relative !important;
-    ul{
-        list-style: none;
-        margin: 0;
-    }
-    a{
-        text-decoration: none;
-        color: #000;
-        word-break: keep-all;
-    }
 
-    img{
-        width: 90px;
-        height: auto;
-        margin-top: -15px;
-    }
-
-    .social-icons{
-        li{
-            padding-left: 20px;
-            i{
-                font-size: 40px;
-            }
-        }
-    }
-}
 
 // remove breadcrum margin
 #__layout{

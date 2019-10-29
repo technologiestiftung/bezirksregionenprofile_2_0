@@ -1,7 +1,7 @@
 <template>
-  <v-footer app :fixed="false">
-    <v-container fluid class="px-3 px-sm-5 px-md-8 px-lg-12">
-      <v-row>
+  <v-footer class="grey lighten-2" app :fixed="false">
+    <v-container fluid class="px-3 pb-8 px-sm-5 px-md-8 px-lg-12">
+      <v-row no-gutters>
         <v-col>
           <ul class="d-flex justify-center justify-lg-end social-icons">
             <li>
@@ -16,7 +16,7 @@
           </ul>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row no-gutters>
         <v-col>
           <div class="d-flex flex-column flex-lg-row">
             <div class="d-flex flex-column flex-lg-row">
@@ -45,3 +45,34 @@
     </v-container>
   </v-footer>
 </template>
+
+<style lang="scss" scoped>
+// footer
+footer.v-footer {
+  position: relative !important;
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    word-break: keep-all;
+  }
+
+  img {
+    width: 90px;
+    height: auto;
+    margin-top: -15px;
+  }
+
+  .social-icons {
+    li {
+      padding-left: 20px;
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+}
+</style>
