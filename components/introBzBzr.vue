@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="12" lg="6">
+      <v-col cols="12" lg="9">
         <h5>{{ type }}</h5>
         <h2>{{ data.name }}</h2>
         <p>
