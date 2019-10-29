@@ -12,11 +12,9 @@
       <text x="100%" y="0%" class="label-top"></text>
 
       <text :id="compareSelectedName" x="50%" y="0%" class="label-top static">
-        {{ compareSelectedName }}
+        {{ compareSelectedName }} : {{ averageValue }}
       </text>
-      <text x="50%" y="100%" :class="[activeIndClass, 'label', 'bzr']">
-        {{ compareWidth }}
-      </text>
+      <text x="50%" y="100%" :class="[activeIndClass, 'label', 'bzr']">{{ compareWidth }}</text>
 
       <line x1="50%" x2="50%" y1="100%" y2="0%" :class="[activeIndClass, 'compare-line']"></line>
 
@@ -50,6 +48,10 @@ export default {
     activeInd: {
       type: Number,
       default: null
+    },
+    averageValue: {
+      type: Number,
+      default: 0
     }
   },
   data() {
@@ -59,26 +61,21 @@ export default {
   },
   computed: {
     compareWidth() {
-      let bzrBZ = 'BZR'
-      if (!this.currentBzr) {
-        bzrBZ = 'BZ'
+      let s = 'Bezirk '
+      if (this.currentBzr) {
+        s = 'Bezirksregion ' + this.currentBzr.name
       }
       // make plus in front of positive numbers to indicate that its x % MORE
       const addPlus = this.indikatorValuePercent > 0 ? '+' : ''
       const percentValue = ' (' + addPlus + Math.round(this.indikatorValuePercent * 10) / 10 + '%)'
-      return bzrBZ + percentValue
+      return s + percentValue
     }
   },
   watch: {
     activeInd(val) {
-      // if the inidkator changes
       this.animate()
     },
-    // bzrSelected: function (val) { //if the inidkator changes
-    //   this.animate();
-    // },
     indikatorValuePercent(val) {
-      // if the inidkator changes
       this.animate()
     }
   },

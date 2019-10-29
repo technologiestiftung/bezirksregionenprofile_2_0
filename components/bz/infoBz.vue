@@ -45,7 +45,9 @@
         <div class="d-flex justify-space-between align-end pb-2">
           <div>
             <h3 class="mb-0 pr-5">{{ indikator['name'] }}</h3>
-            <div class="info-text">{{ indikator['text-sm'] }}</div>
+            <div class="info-text">
+              {{ indikator['text-sm'] }}: <b>{{ indDataParsed[indikator.name].val }}</b>
+            </div>
           </div>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
