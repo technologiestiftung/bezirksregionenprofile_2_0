@@ -1,15 +1,14 @@
 <template>
   <div v-if="dataEl">
     <chart-line v-if="dataEl.type === 'linechart'" :data-sets="dataSets" :data="dataEl.data"></chart-line>
-    <chart-pie v-if="dataEl.type === 'piechart'" :data-sets="dataSets" :data="dataEl.data"></chart-pie>
-    <chart-bar v-else :data-sets="dataSets" :data="dataEl.data"></chart-bar>
+    <chart-bar v-if="dataEl.type === 'barchart'" :data-sets="dataSets" :data="dataEl.data"></chart-bar>
   </div>
 </template>
 
 <script>
 import chartLine from '~/components/bzr/contentElements/chartLine.vue'
 import chartBar from '~/components/bzr/contentElements/chartBar.vue'
-import chartPie from '~/components/bzr/contentElements/chartPie.vue'
+
 export default {
   components: { chartLine, chartBar, chartPie },
   props: {
