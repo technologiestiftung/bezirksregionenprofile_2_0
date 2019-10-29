@@ -31,10 +31,12 @@
       <v-col cols="12" md="12" lg="">
         <div v-if="type === 'Bezirksregion'" class="d-flex justify-lg-end">
           <div class="intro-item pr-4 pr-md-5 pr-xl-12">
-            <v-btn href="" outlined color="primary" class="ma-2">Impressum</v-btn>
+            <v-btn outlined color="primary" class="ma-2" @click="openImprintModal">Impressum</v-btn>
           </div>
           <div class="intro-item">
-            <v-btn href="" outlined color="primary" class="ma-2"> <v-icon class="mr-3">mdi-download</v-icon>Daten download</v-btn>
+            <v-btn :disabled="!datatUrl" :href="datatUrl" outlined color="primary" class="ma-2">
+              <v-icon class="mr-3">mdi-download</v-icon>Daten download</v-btn
+            >
           </div>
         </div>
         <div v-else class="d-flex justify-lg-end">
@@ -44,7 +46,7 @@
           </div>
           <div class="intro-item">
             <v-icon class="pr-2 black--text">mdi-calendar-month-outline</v-icon>Datenstand:
-            <b>31.12.2017</b>
+            <b>{{ releaseDate }}</b>
           </div>
         </div>
       </v-col>
@@ -66,7 +68,23 @@ export default {
     }
   },
   data() {
-    return {}
+    return {
+      dialog: true
+    }
+  },
+  computed: {
+    imprintTxt() {
+      return this.data.imprintTxt ? this.data.imprintTxt : null
+    },
+    datatUrl() {
+      return this.data.datatUrl ? this.data.datatUrl : null
+    },
+    releaseDate() {
+      return this.data.datenstand ? this.data.datenstand : ' --- '
+    }
+  },
+  methods: {
+    openImprintModal() {}
   }
 }
 </script>
