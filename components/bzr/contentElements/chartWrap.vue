@@ -10,7 +10,7 @@ import chartLine from '~/components/bzr/contentElements/chartLine.vue'
 import chartBar from '~/components/bzr/contentElements/chartBar.vue'
 
 export default {
-  components: { chartLine, chartBar, chartPie },
+  components: { chartLine, chartBar },
   props: {
     dataEl: {
       type: Object,
