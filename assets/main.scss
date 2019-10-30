@@ -35,6 +35,10 @@ h3{
     }
 }
 
+#__nuxt{
+    box-sizing: border-box !important;
+}
+
 // bzr content styles
 .bzr-content{
     h3{
@@ -69,7 +73,7 @@ h3{
 
 
 //modal
-.modal{
+.my-modal{
     .v-overlay__content{
         width: 90%;
         max-width: 900px;

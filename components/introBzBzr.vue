@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="modal">
+    <div class="my-modal">
       <v-overlay :value="overlay" @click="overlay = false">
         <v-card light class="mx-auto pa-3 pa-md-4">
           <v-card-title>

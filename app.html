@@ -1,9 +1,57 @@
-<!DOCTYPE html>
-<html {{ HTML_ATTRS }}>
-  <head {{ HEAD_ATTRS }}>
+<!doctype html>
+<html {{ HTML_ATTRS }} xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head {{ HEAD_ATTRS }}>
+    <meta charset="UTF-8" />   
+        <!-- 4 template-path: tmpl_default/header/head.php -->            <title>Liste aller Mastertemplates v4  - Berlin.de</title>
+           
+            <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-bootstrap.css" />
+            <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-index.css" />
+            
+           
+            <link rel="stylesheet" type="text/css" href="/berlinde/css/vendor.css" />
+    <!-- IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/berlinde/js/bo-head.js"></script>
     {{ HEAD }}
-  </head>
-  <body {{ BODY_ATTRS }}>
-    {{ APP }}
-  </body>
+</head>
+<body class="locale_de " {{ BODY_ATTRS }}>
+
+    <div class="container-wrapper container-portal-header">
+        
+        <div class="container">
+            <div class="row" role="banner">
+                <div class="span12">
+                    <div class="html5-header portal-header hidden-phone">
+                        <div class="red-line"></div>
+                        <div class="html5-figure main-image">
+                            <a href="#" title="Link führt zur Startseite von Berlin.de">
+                                <img class="portal-logo" src="/berlinde/css/images/berlin_de.png" alt="Bild zeigt: Berlin.de Logo" title="Link führt zur Startseite von Berlin.de" />
+                            </a>
+                        </div>
+                        <p class="navSkip">Navigiere direkt zu:</p>
+                        <ul class="navSkip">
+                            <li><a href="#aural_institutionssuche">Suche</a></li>
+                            <li><a href="#aural_maincontent">Inhalt</a></li>
+                        </ul>
+                        <div class="html5-nav" aria-label="Globale Portal-Links" role="navigation">
+                            <p id="bo-portalnavilinkslabel" class="aural">Besuchen Sie auch unsere anderen Themen-Bereiche:</p>
+                            <ul class="portal-navi" id="bo-portalnavilinks" aria-labelledby="bo-portalnavilinkslabel">
+                                <li class="active"><a href="#">Politik, Verwaltung, Bürger</a></li>
+                                <li><a href="#">Kultur & Ausgehen</a></li>
+                                <li><a href="#">Tourismus</a></li>
+                                <li><a href="#">Wirtschaft</a></li>
+                                <li><a href="#">Themen</a></li>
+                                <li><a href="#">Branchenbuch</a></li>
+                                <li><a href="#">Stadtplan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        {{ APP }}
+    </div>
+</body>
 </html>
