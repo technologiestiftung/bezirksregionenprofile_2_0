@@ -85,19 +85,19 @@ export default {
       const mapUnit = this.data[0].einheit
       const mapData = {}
       let maxValue = []
-      let totalValue = 0
+      // let totalValue = 0
       for (let i = 0; i < this.data.length; i++) {
         mapData[this.data[i].id] = {}
         mapData[this.data[i].id].wert = this.data[i].wert
         maxValue.push(Number(this.data[i].wert))
-        totalValue += Number(this.data[i].wert)
+        // totalValue += Number(this.data[i].wert)
       }
 
       // give each geom a value/wert
       maxValue = Math.max(...maxValue)
       for (let i = 0; i < this.geoJsonBzr.features.length; i++) {
         this.geoJsonBzr.features[i].properties.wert =
-          mapData[Number(this.geoJsonBzr.features[i].properties.spatial_name)].wert / totalValue
+          (mapData[Number(this.geoJsonBzr.features[i].properties.spatial_name)].wert / maxValue) * 0.8
       }
 
       mapboxgl.accessToken = ''
