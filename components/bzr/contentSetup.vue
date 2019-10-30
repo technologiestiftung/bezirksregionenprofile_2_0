@@ -10,7 +10,7 @@
     </h5>
     <!-- Text -->
     <client-only>
-      <div v-if="dataEl.type === 'text'" class="blatt-el-text" v-html="txt">{{ txt }}</div>
+      <div v-if="dataEl.type === 'text'" class="blatt-el-text" v-html="$md.render(dataEl.content)"></div>
     </client-only>
     <!-- Image -->
     <v-row align="center" justify="center">
@@ -30,10 +30,7 @@
     </v-row>
     <!-- Chart -->
     <div class="mb-5">
-      <chart-wrap
-        v-if="dataEl.type == 'barchart' || dataEl.type == 'linechart' || dataEl.type == 'piechart'"
-        :data-el="dataEl"
-      ></chart-wrap>
+      <chart-wrap v-if="dataEl.type == 'barchart' || dataEl.type == 'linechart'" :data-el="dataEl"></chart-wrap>
     </div>
     <!-- Table -->
     <data-table v-if="dataEl.type === 'table'" :data-el="dataEl"></data-table>
@@ -63,11 +60,6 @@ export default {
   data() {
     return {}
   },
-  computed: {
-    txt() {
-      return this.dataEl.content.replace(/&/g, '&amp;').replace(/"/g, "'")
-    }
-  },
-  methods: {}
+  computed: {}
 }
 </script>

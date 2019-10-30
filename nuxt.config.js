@@ -70,8 +70,16 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/markdownit'
   ],
+  // setup markdownit
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    breaks: true, // Convert '\n' in paragraphs into <br>
+    html: true // Enable HTML tags in source
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

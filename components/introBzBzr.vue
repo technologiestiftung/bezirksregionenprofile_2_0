@@ -1,5 +1,23 @@
 <template>
   <div>
+    <div class="modal">
+      <v-overlay :value="overlay" @click="overlay = false">
+        <v-card light class="mx-auto pa-3 pa-md-4">
+          <v-card-title>
+            <div class="d-flex justify-space-between w-100 align-center">
+              <h3 class="mt-2">Impressum</h3>
+              <v-btn icon @click="overlay = false">
+                <v-icon size="3+40">mdi-close</v-icon>
+              </v-btn>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <div v-html="$md.render(imprintTxt)"></div>
+          </v-card-text>
+        </v-card>
+      </v-overlay>
+    </div>
+
     <v-row>
       <v-col cols="12" lg="9">
         <h5>{{ type }}</h5>
@@ -31,7 +49,9 @@
       <v-col cols="12" md="12" lg="">
         <div v-if="type === 'Bezirksregion'" class="d-flex justify-lg-end">
           <div class="intro-item pr-4 pr-md-5 pr-xl-12">
-            <v-btn outlined color="primary" class="ma-2" @click="openImprintModal">Impressum</v-btn>
+            <v-btn :disabled="imprintTxt == ''" outlined color="primary" class="ma-2" @click="overlay = !overlay"
+              >Impressum</v-btn
+            >
           </div>
           <div class="intro-item">
             <v-btn :disabled="!datatUrl" :href="datatUrl" outlined color="primary" class="ma-2">
@@ -69,12 +89,12 @@ export default {
   },
   data() {
     return {
-      dialog: true
+      overlay: false
     }
   },
   computed: {
     imprintTxt() {
-      return this.data.imprintTxt ? this.data.imprintTxt : null
+      return this.data.imprint ? this.data.imprint : ''
     },
     datatUrl() {
       return this.data.datatUrl ? this.data.datatUrl : null
