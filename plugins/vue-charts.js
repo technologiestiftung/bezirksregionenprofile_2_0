@@ -11,10 +11,16 @@ Vue.component('my-line', {
     options: {
       type: Object,
       default: null
+    },
+    alt: {
+      type: String,
+      default: ''
     }
   },
   mounted() {
     this.renderChart(this.data, this.options)
+    this.$refs.canvas.setAttribute('role', 'img')
+    this.$refs.canvas.setAttribute('aria-label', this.alt)
   }
 })
 Vue.component('my-bar', {
@@ -27,9 +33,15 @@ Vue.component('my-bar', {
     options: {
       type: Object,
       default: null
+    },
+    alt: {
+      type: String,
+      default: ''
     }
   },
   mounted() {
     this.renderChart(this.data, this.options)
+    this.$refs.canvas.setAttribute('role', 'img')
+    this.$refs.canvas.setAttribute('aria-label', this.alt)
   }
 })

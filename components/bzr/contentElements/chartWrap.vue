@@ -1,7 +1,7 @@
 <template>
   <div v-if="dataEl">
-    <chart-line v-if="dataEl.type === 'linechart'" :data-sets="dataSets" :data="dataEl.data"></chart-line>
-    <chart-bar v-if="dataEl.type === 'barchart'" :data-sets="dataSets" :data="dataEl.data"></chart-bar>
+    <chart-line v-if="dataEl.type === 'linechart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-line>
+    <chart-bar v-if="dataEl.type === 'barchart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-bar>
   </div>
 </template>
 
