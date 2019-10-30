@@ -13,24 +13,26 @@
       <div v-if="dataEl.type === 'text'" class="blatt-el-text" v-html="$md.render(dataEl.content)"></div>
     </client-only>
     <!-- Image -->
-    <figure>
-      <v-row align="center" justify="center">
-        <v-img
-          v-if="dataEl.type === 'image'"
-          class="blatt-el-img mb-5 mx-n5 mx-md-0"
-          :src="dataEl.datasource"
-          :lazy-src="dataEl.datasource.replace('.png', '-thumbnail.png')"
-          :alt="dataEl.alt"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0 " align="center" justify="center">
-              <v-progress-circular indeterminate :size="80" color="primary"></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-row>
-      <figcaption v-if="dataEl.source">{{ dataEl.source }}</figcaption>
-    </figure>
+    <div v-if="dataEl.type === 'image'">
+      <h4 v-if="dataEl.content != ''">{{ dataEl.content }}</h4>
+      <figure>
+        <v-row align="center" justify="center">
+          <v-img
+            class="blatt-el-img mb-5 mx-n5 mx-md-0"
+            :src="dataEl.datasource"
+            :lazy-src="dataEl.datasource.replace('.png', '-thumbnail.png')"
+            :alt="dataEl.alt"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0 " align="center" justify="center">
+                <v-progress-circular indeterminate :size="80" color="primary"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-row>
+        <figcaption v-if="dataEl.source">{{ dataEl.source }}</figcaption>
+      </figure>
+    </div>
     <!-- Chart -->
     <div class="mb-5">
       <chart-wrap v-if="dataEl.type == 'barchart' || dataEl.type == 'linechart'" :data-el="dataEl"></chart-wrap>
