@@ -5,7 +5,7 @@
         <v-card light class="mx-auto pa-3 pa-md-4">
           <v-card-title>
             <div class="d-flex justify-space-between w-100 align-center">
-              <h3 class="mt-2">Impressum</h3>
+              <h3 class="pt-2">Impressum</h3>
               <v-btn icon @click="overlay = false">
                 <v-icon size="3+40">mdi-close</v-icon>
               </v-btn>
