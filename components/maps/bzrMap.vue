@@ -1,6 +1,6 @@
 <template>
   <div class="h-100">
-    <div class="map-container">
+    <div class="map-container" :class="mapType">
       <div class="map-container-inner">
         <transition name="fade">
           <div v-if="!mapLoaded" class="map-loader">
@@ -28,6 +28,10 @@ export default {
     mapId: {
       type: Number,
       default: 1
+    },
+    mapType: {
+      type: String,
+      default: 'bezirksregion'
     }
   },
   data() {
@@ -242,33 +246,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.map-container {
-  position: relative;
-  .map-container-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    .map-loader {
-      background-color: #efefef;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
-
-// map is a responsive square
-.map-container {
-  padding-bottom: 100%;
-  .map {
-    height: 100%;
-    width: 100%;
-  }
-}
-</style>

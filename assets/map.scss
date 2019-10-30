@@ -1,21 +1,50 @@
 
-/*
 .map-container {
   position: relative;
-  padding-bottom: 100%;
-
   .map-container-inner {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-
-    #map {
+    .mapboxgl-map{
       width: 100%;
       height: 100%;
     }
+    .map-loader {
+      background-color: #efefef;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
-*/
+
+// height of index map
+.map-container.bezirke {
+  height: 80vh;
+}
+
+// height of BZ map
+.map-container.bezirk {
+  padding-bottom: 60vh;
+  @media screen and (min-width: 1264px) {
+    padding-bottom: 150%;
+  }
+}
+
+// height of bzr map
+.map-container.bezirksregion {
+  padding-bottom: 100%;
+}
+
+// height of maps in content section
+.map-container.content-map {
+  padding-bottom: 70%;
+}
+
 
 .mapboxgl-popup-tip {
   opacity: 0;

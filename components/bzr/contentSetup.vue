@@ -40,8 +40,20 @@
     <!-- Table -->
     <data-table v-else-if="dataEl.type === 'table'" :data-el="dataEl" class="pb-6"></data-table>
     <!-- Map -->
-    <bzr-map v-else-if="dataEl.type === 'map-poi'" class="mx-n5 mx-md-0" :poi-data="dataEl.data" :map-id="contentId"></bzr-map>
-    <pr-map v-else-if="dataEl.type === 'map-pr'" class="mx-n5 mx-md-0" :data="dataEl.data" :map-id="contentId"></pr-map>
+    <bzr-map
+      v-else-if="dataEl.type === 'map-poi'"
+      class="mx-n5 mx-md-0"
+      :poi-data="dataEl.data"
+      :map-id="contentId"
+      map-type="content-map"
+    ></bzr-map>
+    <pr-map
+      v-else-if="dataEl.type === 'map-pr'"
+      class="mx-n5 mx-md-0"
+      :data="dataEl.data"
+      :map-id="contentId"
+      map-type="content-map"
+    ></pr-map>
   </div>
 </template>
 
