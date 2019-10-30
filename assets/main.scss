@@ -68,6 +68,14 @@ h3{
 }
 
 
+//modal
+.modal{
+    .v-overlay__content{
+        width: 90%;
+        max-width: 900px;
+    }
+}
+
 
 // remove breadcrum margin
 #__layout{
