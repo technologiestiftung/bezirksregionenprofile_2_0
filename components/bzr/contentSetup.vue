@@ -15,7 +15,7 @@
     <!-- Image -->
     <div v-else-if="dataEl.type === 'image'">
       <h4 v-if="dataEl.content != ''">{{ dataEl.content }}</h4>
-      <figure>
+      <figure class="pb-6">
         <v-row align="center" justify="center">
           <v-img
             class="blatt-el-img mb-5 mx-n5 mx-md-0"
@@ -38,7 +38,7 @@
       <chart-wrap></chart-wrap>
     </div>
     <!-- Table -->
-    <data-table v-else-if="dataEl.type === 'table'" :data-el="dataEl"></data-table>
+    <data-table v-else-if="dataEl.type === 'table'" :data-el="dataEl" class="pb-6"></data-table>
     <!-- Map -->
     <bzr-map v-else-if="dataEl.type === 'map-poi'" class="mx-n5 mx-md-0" :poi-data="dataEl.data" :map-id="contentId"></bzr-map>
     <pr-map v-else-if="dataEl.type === 'map-pr'" class="mx-n5 mx-md-0" :data="dataEl.data" :map-id="contentId"></pr-map>
