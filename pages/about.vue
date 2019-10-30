@@ -43,7 +43,7 @@
           </p>
           <br />
 
-          <h2>Beschreibung der einzelnen Kernindikatoren</h2>
+          <h2 id="indikators">Beschreibung der einzelnen Kernindikatoren</h2>
           <p>
             Die Kernindikatoren sind ein berlinweit abgestimmtes Indikatorenset, mit dem im Rahmen der integrierten
             Stadtteilentwicklung die Vergleichbarkeit der Ist-Situation und der Entwicklung in den Bezirksregionen bezirksintern

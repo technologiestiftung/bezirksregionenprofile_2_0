@@ -75,6 +75,43 @@
         </transition>
       </v-col>
     </v-row>
+    <v-row class="justify-end pt-5">
+      <v-btn class="mx-2" tile large color="primary" @click="overlay = true"> <v-icon left light>mdi-help</v-icon> Hilfe </v-btn>
+    </v-row>
+
+    <div class="modal">
+      <v-overlay :value="overlay" @click="overlay = false">
+        <v-card light class="mx-auto pa-3 pa-md-4">
+          <v-card-title>
+            <div class="d-flex justify-end w-100 align-center">
+              <v-btn icon @click="overlay = false">
+                <v-icon size="40">mdi-close</v-icon>
+              </v-btn>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <h3>Wie die Grafiken zu lesen sind</h3>
+            <p>
+              Für jeden Kernindikator wird der Wert des Bezirks (der Bezirksregion) mit Berlin (bzw. für Bezirksregionen wahlweise
+              mit Berlin oder dem Bezirk) verglichen. Die Abweichung vom Vergleichswert wird in Prozent angezeigt. Kurzinfo zu den
+              Kernindikatoren
+            </p>
+            <h3>Kurzinfo zu den Kernindikatoren</h3>
+            <p>
+              Ein Hover über das <v-icon size="20">mdi-information</v-icon> bei jedem Kernindikator zeigt eine ausführlichere
+              Erklärung des Indikators sowie den genauen Wert an. Ausfürliche Info zu den Kernindikatoren Hier klicken
+            </p>
+            <h3>Ausfürliche Info zu den Kernindikatoren</h3>
+            <p>
+              <v-btn class="mt-1" tile color="primary" small to="/about#indikators">
+                <v-icon left>mdi-arrow-right</v-icon>
+                Beschreibung der einzelnen Kernindikatoren
+              </v-btn>
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-overlay>
+    </div>
   </div>
 </template>
 
@@ -87,7 +124,8 @@ export default {
   data() {
     return {
       activeInd: 1,
-      compareSelected: 'berlin'
+      compareSelected: 'berlin',
+      overlay: false
     }
   },
   computed: {
