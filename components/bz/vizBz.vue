@@ -63,7 +63,7 @@ export default {
     compareWidth() {
       let s = 'Bezirk '
       if (this.currentBzr) {
-        s = 'Bezirksregion ' + this.currentBzr.name
+        s = this.currentBzr.name
       }
       // make plus in front of positive numbers to indicate that its x % MORE
       const addPlus = this.indikatorValuePercent > 0 ? '+' : ''
