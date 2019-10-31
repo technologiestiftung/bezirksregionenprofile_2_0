@@ -18,8 +18,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + 'Berliner Bezirksregionen Monitor',
-    title: 'Berliner Bezirksregionen Monitor' || '',
+    titleTemplate: '%s - ' + 'Berliner Bezirksregionenprofile',
+    title: 'Berliner Bezirksregionenprofile' || '',
     meta: [
       {
         charset: 'utf-8'
