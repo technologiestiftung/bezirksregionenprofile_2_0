@@ -1,0 +1,7 @@
+export { default as titleEl } from './titleEl.vue'
+export { default as titleSmEl } from './titleSmEl.vue'
+export { default as textEl } from './textEl.vue'
+export { default as imageEl } from './imageEl.vue'
+export { default as chartWrapEl } from './chartWrapEl.vue'
+export { default as mapEl } from './mapEl.vue'
+export { default as dataTableEl } from './dataTableEl.vue'

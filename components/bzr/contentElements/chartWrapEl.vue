@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import chartLine from '~/components/bzr/contentElements/chartLine.vue'
-import chartBar from '~/components/bzr/contentElements/chartBar.vue'
+import chartLine from '~/components/charts/chartLine.vue'
+import chartBar from '~/components/charts/chartBar.vue'
 
 export default {
   components: { chartLine, chartBar },

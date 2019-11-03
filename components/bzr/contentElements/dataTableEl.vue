@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-6">
     <div v-if="dataEl.data && dataEl.data.length > 0">
       <v-data-table hide-default-footer :headers="headers" :items="dataEl.data" :items-per-page="20"></v-data-table>
     </div>
