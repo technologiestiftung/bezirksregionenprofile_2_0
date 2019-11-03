@@ -2,7 +2,7 @@
   "name": "xxx",
   "version": "1.0.0",
   "description": "",
-  "author": "Berliner Bezirksregionen Monitor, Ralph Schulz",
+  "author": "Berliner Bezirksregionenprofile, Ralph Schulz",
   "private": true,
   "scripts": {
     "dev": "API_URL=http://b-api.rgb3000.com nuxt",

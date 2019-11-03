@@ -4,8 +4,8 @@
       <v-col cols="12" class="" md="">
         <h1>
           <nuxt-link to="/">
-            <span class="d-none d-md-block">Berliner Bezirksregionen Monitor</span>
-            <img class="d-md-none" src="/img/logo.svg" alt="Berliner Bezirksregionen Monitor" />
+            <span class="d-none d-md-block">Berliner Bezirksregionenprofile</span>
+            <img class="d-md-none" src="/img/logo.svg" alt="Berliner Bezirksregionenprofile" />
           </nuxt-link>
         </h1>
       </v-col>

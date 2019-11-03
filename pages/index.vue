@@ -30,7 +30,7 @@
       <v-col order="1" order-md="2" cols="12" sm="12" md="5" lg="5" xl="4">
         <div class="primary d-flex flex-column justify-center px-6 py-6 pa-md-12 white--text h-100">
           <div class="intro-text">
-            <h2>Wie Geht es den Berliner Bezirken?</h2>
+            <h2>Wie geht es den Berliner Bezirken?</h2>
             <p>
               In welchem Kiez gibt es viele Spielplätze? Wo ziehen überdurchschnittlich viele Berliner*innen hin? Der Ist-Zustand
               der Berliner Bezirke - und der kleingliedrigeren Bezirksregionen - wird in sogenannten Bezirks(regionen)profilen

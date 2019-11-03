@@ -2,7 +2,7 @@
 <html {{ HTML_ATTRS }} xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head {{ HEAD_ATTRS }}>
     <meta charset="UTF-8" />   
-        <!-- 4 template-path: tmpl_default/header/head.php -->            <title>Liste aller Mastertemplates v4  - Berlin.de</title>
+        <!-- 4 template-path: tmpl_default/header/head.php -->            <title>Berliner Bezirksregionenprofile</title>
            
             <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-bootstrap.css" />
             <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-index.css" />
@@ -36,13 +36,13 @@
                         <div class="html5-nav" aria-label="Globale Portal-Links" role="navigation">
                             <p id="bo-portalnavilinkslabel" class="aural">Besuchen Sie auch unsere anderen Themen-Bereiche:</p>
                             <ul class="portal-navi" id="bo-portalnavilinks" aria-labelledby="bo-portalnavilinkslabel">
-                                <li class="active"><a href="#">Politik, Verwaltung, Bürger</a></li>
-                                <li><a href="#">Kultur & Ausgehen</a></li>
-                                <li><a href="#">Tourismus</a></li>
-                                <li><a href="#">Wirtschaft</a></li>
-                                <li><a href="#">Themen</a></li>
-                                <li><a href="#">Branchenbuch</a></li>
-                                <li><a href="#">Stadtplan</a></li>
+                                <li class="active"><a href="https://www.berlin.de/politik-verwaltung-buerger/">Politik, Verwaltung, Bürger</a></li>
+                                <li><a href="https://www.berlin.de/kultur-und-tickets/">Kultur & Ausgehen</a></li>
+                                <li><a href="https://www.berlin.de/tourismus/">Tourismus</a></li>
+                                <li><a href="https://www.berlin.de/wirtschaft/">Wirtschaft</a></li>
+                                <li><a href="https://www.berlin.de/special/">Themen</a></li>
+                                <li><a href="https://www.berlin.de/adressen/">Branchenbuch</a></li>
+                                <li><a href="https://www.berlin.de/stadtplan/">Stadtplan</a></li>
                             </ul>
                         </div>
                     </div>
@@ -50,6 +50,19 @@
             </div>
         </div>
     </div>
+    <div class="wrapper">
+        <!-- 4 template-path: tmpl_default/navi/navi_mobil_header.inc.php -->
+        <!-- navi mobil header inc -->
+        <div class="sticky-header bde-gradient hidden-desktop hidden-tablet">
+            <div class="red-line"></div>
+            <div class="portal-logo">
+                <a title="Link führt zur Startseite von Berlin.de" href="https://www.berlin.de/">
+                    <img title="Link führt zur Startseite von Berlin.de" alt="Bild zeigt: Berlin.de Logo"
+                        src="css/images/berlin_de.png">
+                </a>
+            </div>
+        </div>
+        <!-- navi mobil header inc -->
     <div>
         {{ APP }}
     </div>
