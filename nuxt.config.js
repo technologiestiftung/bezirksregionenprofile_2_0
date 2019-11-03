@@ -109,7 +109,7 @@ export default {
   },
   // generate the site links
   generate: {
-    concurrency: 5,
+    concurrency: 3,
     // routes: ['tempelhofschoeneberg/schoenebergnord']
     async routes() {
       const res = await axios.get(process.env.API_URL + '/generated/routes.json')
