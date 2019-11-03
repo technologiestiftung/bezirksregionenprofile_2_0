@@ -42,12 +42,8 @@
             <!-- Title Thema -->
             <h3 :id="'thema-id-' + thema.id">{{ thema.id }}. {{ thema.name }}</h3>
 
-            <div v-for="(blattEl, index) in datenblatt" :key="index" class="datenblatt-element">
-              <content-setup
-                v-if="blattEl.ref == thema.id && blattEl.type !== ''"
-                :data-el="blattEl"
-                :content-id="index"
-              ></content-setup>
+            <div v-for="(blattEl, index) in datenByTheme[thema.id]" :key="index" class="datenblatt-element">
+              <content-setup :data-el="blattEl" :content-id="index"></content-setup>
             </div>
           </li>
         </ul>
@@ -84,7 +80,20 @@ export default {
     }
   },
   computed: {
-    ...mapState(['bzBzrPrData', 'themen'])
+    ...mapState(['bzBzrPrData', 'themen']),
+    // return data sorted by thema
+    datenByTheme() {
+      const r = []
+      this.themen.forEach((thema) => {
+        r[thema.id] = []
+        this.datenblatt.forEach((d) => {
+          if (parseInt(d.ref) === thema.id) {
+            r[thema.id].push(d)
+          }
+        })
+      })
+      return r
+    }
   },
   async asyncData({ params, $axios, error }) {
     // load bzr-overview

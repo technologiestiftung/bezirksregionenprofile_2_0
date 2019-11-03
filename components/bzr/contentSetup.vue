@@ -18,6 +18,7 @@ export default {
     return {}
   },
   computed: {
+    // dynamic component names depending on type
     componentName() {
       if (this.dataEl.type === 'titel') {
         return 'title-el'
