@@ -101,7 +101,7 @@ export default {
       maxValue = Math.max(...maxValue)
       for (let i = 0; i < this.geoJsonBzr.features.length; i++) {
         this.geoJsonBzr.features[i].properties.wert =
-          (mapData[Number(this.geoJsonBzr.features[i].properties.spatial_name)].wert / maxValue) * 0.8 + 0.1
+          (mapData[Number(this.geoJsonBzr.features[i].properties.spatial_name)].wert / maxValue) * 0.6 + 0.05
       }
 
       mapboxgl.accessToken = ''

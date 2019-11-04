@@ -1,7 +1,9 @@
 <template>
   <div v-if="dataEl">
+    <h5 v-if="dataEl.content !== ''">{{ dataEl.content }}</h5>
     <chart-line v-if="dataEl.type === 'linechart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-line>
     <chart-bar v-if="dataEl.type === 'barchart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-bar>
+    <small v-if="dataEl.source != ''" class="content-source">{{ dataEl.source }}</small>
   </div>
 </template>
 

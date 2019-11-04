@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="pb-6">
+    <h5 v-if="dataEl.content !== ''">{{ dataEl.content }}</h5>
     <bzr-map
       v-if="dataEl.type === 'map-poi'"
       class="mx-n5 mx-md-0"
@@ -8,6 +9,7 @@
       map-type="content-map"
     ></bzr-map>
     <pr-map v-else class="mx-n5 mx-md-0" :data="dataEl.data" :map-id="contentId" map-type="content-map"></pr-map>
+    <small v-if="dataEl.source != ''" class="content-source">{{ dataEl.source }}</small>
   </div>
 </template>
 

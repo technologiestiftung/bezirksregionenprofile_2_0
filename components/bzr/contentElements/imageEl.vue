@@ -1,14 +1,9 @@
 <template>
-  <div>
-    <h4 v-if="dataEl.content != ''">{{ dataEl.content }}</h4>
+  <div class="pb-6 mx-n5 mx-md-0">
+    <h5 v-if="dataEl.content != ''">{{ dataEl.content }}</h5>
     <figure class="pb-6">
       <v-row align="center" justify="center">
-        <v-img
-          class="blatt-el-img mb-5 mx-n5 mx-md-0"
-          :src="dataEl.datasource"
-          :lazy-src="dataEl.datasource.replace('.png', '-thumbnail.png')"
-          :alt="dataEl.alt"
-        >
+        <v-img :src="dataEl.datasource" :lazy-src="dataEl.datasource.replace('.png', '-thumbnail.png')" :alt="dataEl.alt">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0 " align="center" justify="center">
               <v-progress-circular indeterminate :size="80" color="primary"></v-progress-circular>
@@ -16,7 +11,7 @@
           </template>
         </v-img>
       </v-row>
-      <figcaption v-if="dataEl.source">{{ dataEl.source }}</figcaption>
+      <figcaption v-if="dataEl.source != ''" class="content-source">{{ dataEl.source }}</figcaption>
     </figure>
   </div>
 </template>
