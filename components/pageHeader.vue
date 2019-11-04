@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-if="false">
     <v-row class=" justify-space-between align-end">
       <v-col cols="12" class="" md="">
         <h1>
