@@ -81,19 +81,19 @@ export default {
   },
   head() {
     return {
-      title: this.currentBz.name,
+      title: this.currentBzr.name,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'description',
           name: 'description',
-          content: 'Datenprofil zu ' + this.currentBz.name
+          content: 'Datenprofil zu ' + this.currentBzr.name
         }
       ]
     }
   },
   computed: {
-    ...mapState(['bzBzrPrData', 'themen', 'currentBrz']),
+    ...mapState(['bzBzrPrData', 'themen', 'currentBzr']),
     // return data sorted by thema
     datenByTheme() {
       const r = []
