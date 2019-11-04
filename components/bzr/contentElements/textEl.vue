@@ -1,5 +1,5 @@
 <template>
-  <div class="blatt-el-text" v-html="$md.render(dataEl.content)"></div>
+  <div v-html="$md.render(dataEl.content)"></div>
 </template>
 
 <script>
