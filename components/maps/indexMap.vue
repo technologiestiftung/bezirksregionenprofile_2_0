@@ -1,6 +1,6 @@
 <template>
   <div class="h-100">
-    <div class="map-container" :class="mapType">
+    <div class="map-container" :class="mapType" role="application" :aria-label="ariaLabel">
       <div class="map-container-inner">
         <transition name="fade">
           <div v-if="!mapLoaded" class="map-loader">
@@ -62,6 +62,11 @@ export default {
       } else {
         return `${this.currentBz.url}/${this.selected}`
       }
+    },
+    ariaLabel() {
+      return this.currentBz
+        ? `Übersichtskarte des Bezriks ${this.currentBz.name} mit allen Bezirksregionen`
+        : 'Übersichtskarte Berlin mit allen Bezirken'
     }
   },
   watch: {
