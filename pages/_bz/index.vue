@@ -74,12 +74,13 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Bezirksregionen Profil zu: ' + this.currentBz.name
+          content: 'Datenprofil zu: ' + this.currentBz.name
         }
       ]
     }
   },
   computed: {
+    ...mapState(['bzBzrPrData', 'currentBz', 'currentBzr']),
     bzrSorted() {
       if (this.currentBz.bzr) {
         const ordered = {}
@@ -98,8 +99,7 @@ export default {
     },
     selectedUrl() {
       return this.currentBz.url + '/' + this.currentBzr
-    },
-    ...mapState(['bzBzrPrData', 'currentBz', 'currentBzr'])
+    }
   },
   async asyncData({ params }) {
     const { data } = await axios.get(process.env.apiUrl + `/bz-data/${params.bz}/bz-overview.json`)
