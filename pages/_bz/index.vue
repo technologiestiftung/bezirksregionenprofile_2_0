@@ -116,14 +116,7 @@ export default {
       await store.dispatch('loadCurrentBzIndikatorenBzrData')
     }
   },
-  mounted() {
-    // this.loadIndikatorenData()
-  },
   methods: {
-    async loadIndikatorenData() {
-      await this.$store.dispatch('loadCurrentBzIndikatorenData')
-      await this.$store.dispatch('loadCurrentBzIndikatorenBzrData')
-    },
     setBzr(e) {
       this.selected = this.currentBz.bzr[e]
     }
