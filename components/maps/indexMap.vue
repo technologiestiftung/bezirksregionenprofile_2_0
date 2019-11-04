@@ -71,10 +71,12 @@ export default {
     },
     // highlight area when selected
     currentBzr() {
-      if (this.currentBzr) {
-        this.map.setFilter('fill-select', ['==', this.featureName, this.currentBzr.name])
-      } else {
-        this.map.setFilter('fill-select', ['==', this.featureName, ''])
+      if (this.map) {
+        if (this.currentBzr) {
+          this.map.setFilter('fill-select', ['==', this.featureName, this.currentBzr.name])
+        } else {
+          this.map.setFilter('fill-select', ['==', this.featureName, ''])
+        }
       }
     }
   },

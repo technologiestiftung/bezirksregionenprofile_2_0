@@ -51,7 +51,7 @@ export default {
     // filter the gejson data of current bzr only
     geoJsonBzr() {
       const r = { features: [], type: 'FeatureCollection' }
-      if (this.geojsonData) {
+      if (this.geojsonData && this.currentBzr !== null) {
         this.geojsonData.features.forEach((element) => {
           if (element.properties.BZRNAME === this.currentBzr.name) {
             r.features.push(element)

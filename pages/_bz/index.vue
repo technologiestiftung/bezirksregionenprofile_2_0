@@ -111,10 +111,13 @@ export default {
       error({ statusCode: 404 })
     } else {
       store.commit('setCurrentBz', params.bz)
-      store.commit('setCurrentBzr', null) // reset bzr to null
+
       await store.dispatch('loadCurrentBzIndikatorenData')
       await store.dispatch('loadCurrentBzIndikatorenBzrData')
     }
+  },
+  mounted() {
+    this.$store.commit('setCurrentBzr', null) // reset bzr to null
   },
   methods: {
     setBzr(e) {
