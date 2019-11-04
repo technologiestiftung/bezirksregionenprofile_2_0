@@ -71,6 +71,7 @@ export default {
     },
     // highlight area when selected
     currentBzr() {
+      // when map is initialized
       if (this.map) {
         if (this.currentBzr) {
           this.map.setFilter('fill-select', ['==', this.featureName, this.currentBzr.name])
