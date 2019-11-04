@@ -51,7 +51,9 @@
           </div>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
-              <v-btn color="primary" text icon v-on="on"><v-icon>mdi-information</v-icon></v-btn>
+              <v-btn aria-label="Weitere Informationen zu Diagramm" color="primary" text icon v-on="on"
+                ><v-icon>mdi-information</v-icon></v-btn
+              >
             </template>
             <span class="tooltip-text"
               >{{ indikator['text-lg'] + ': ' }}
