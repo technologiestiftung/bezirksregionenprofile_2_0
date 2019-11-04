@@ -11,7 +11,7 @@ export default {
     dataEl: { type: Object, default: null },
     contentId: {
       type: Number,
-      default: 0
+      default: 1
     }
   },
   data() {

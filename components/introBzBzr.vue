@@ -20,11 +20,9 @@
 
     <v-row>
       <v-col cols="12" lg="9">
-        <h5>{{ type }}</h5>
+        <small>{{ type }}</small>
         <h2>{{ data.name }}</h2>
-        <p>
-          {{ data.introText }}
-        </p>
+        <div v-html="$md.render(data.introText)"></div>
       </v-col>
     </v-row>
 
