@@ -183,6 +183,14 @@
             Komponenten der Stadt Berlin.
             <br />
           </p>
+          <p>
+            Mehr Informationen zur Sozialraumentwicklung sind unter folgenden Link einsehbar:
+          </p>
+          <p>
+            <a href="https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung/" target="_blank"
+              >https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung/</a
+            >
+          </p>
 
           <br />
           <h3>Aufbau der Bezirksregionenprofile</h3>
