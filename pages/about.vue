@@ -282,7 +282,6 @@
               >https://github.com/technologiestiftung/bezirksregionenprofile_2_0</a
             >
           </p>
-          <<<<<<< HEAD ======= >>>>>>> origin/update/about
         </div>
       </v-col>
     </v-row>

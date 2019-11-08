@@ -111,4 +111,9 @@ h3{
   .container-wrapper{
       width: 100%;
       margin-bottom: 0px !important;
+
+      .container{
+          padding: 0;
+          width: 61.25rem;
+      }
   }
