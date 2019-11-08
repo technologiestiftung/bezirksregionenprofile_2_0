@@ -28,7 +28,7 @@
               </address>
             </div>
 
-            <ul class="pl-2 mt-7 mt-lg-0 ml-lg-12">
+            <ul class="pl-2 mt-7 mt-lg-0 ml-lg-12 mr-lg-12">
               <li>
                 <a target="_blank" href="https://www.technologiestiftung-berlin.de/de/stiftung/kontakt-anfahrt/">Kontakt</a>
               </li>
@@ -37,6 +37,11 @@
               </li>
               <li>
                 <a target="_blank" href="https://www.technologiestiftung-berlin.de/de/datenschutz/">Datenschutz</a>
+              </li>
+            </ul>
+            <ul class="pl-2 mt-7 mt-lg-0 ">
+              <li>
+                <nuxt-link to="/about">Über den Monitor</nuxt-link>
               </li>
             </ul>
           </div>
