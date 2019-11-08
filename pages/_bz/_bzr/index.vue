@@ -144,18 +144,20 @@ export default {
         // load additional data
         if (datenblatt[i].datasource !== undefined && datenblatt[i].datasource !== '' && datenblatt[i].type !== 'image') {
           datenblatt[i].data = null
-          const sourceData = await $axios
+
+          $axios
             .get(process.env.apiUrl + `/bz-data/${params.bz}/bzr-data/${params.bzr}/data/${datenblatt[i].datasource}.csv`)
+            .then((res) => {
+              datenblatt[i].data = Papa.parse(res.data, {
+                header: true,
+                skipEmptyLines: true
+              }).data
+            })
             .catch((e) => {})
-          if (sourceData) {
-            datenblatt[i].data = Papa.parse(sourceData.data, {
-              header: true,
-              skipEmptyLines: true
-            }).data
-          }
         }
       }
     }
+
     return {
       bzrOverview,
       datenblatt
