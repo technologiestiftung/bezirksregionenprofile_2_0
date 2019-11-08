@@ -18,7 +18,6 @@
             in die Sozialraumplanung und -entwicklung Berlins erhalten. Die 138 Bezirksregion der 12 Berliner Bezirke können mit
             Hilfe sogenannter Kernindikatoren in fünf Kategorien eingeteilt und somit ganzheitlich und erstmalig spielerisch mit
             den Daten anderer Regionen, beispielsweise gesamt Berlin, verglichen werden.
-            <<<<<<< HEAD Diese Webanwendung zu den Berliner Bezirksregionenprofilen ist ein Projekt des
             <strong
               >Ideation und Protoyping Lab der
               <a href="https://www.technologiestiftung-berlin.de/">Technologiestiftung Berlin</a></strong
@@ -122,17 +121,17 @@
             Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion. Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken
             zugeordnet werden können. Der Berliner Bezirkregionen Monitor bildet wiederum 22 (E4 wird nicht erfasst)
             Kernidikatoren aus 5 Rubriken ab. Nachfolgend werden die 5 Rubriken und ihre dazugehörigen Kernindikatoren kurz
-            dazugehörigen Kernindikatoren kurz beschrieben. >>>>>>> origin/update/about
+            dazugehörigen Kernindikatoren kurz beschrieben.
+          </p>
           <h2 id="indikators">Was sind Kernindikatoren?</h2>
-            <<<<<<< HEAD und bezirksübergreifend gewährleistet werden soll. Die Kernindikatoren bilden dabei sozialräumliche Daten
-            zur demografischen Struktur einer Bezirksregion ab und untersuchen u.a. Merkmale zu Armutsrisiken,
-            Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch Stabilität und Dynamik der Wohnbevölkerung einer
-            Bezirksregion.
+          <p>
+            Die Kernindikatoren bilden dabei sozialräumliche Daten zur demografischen Struktur einer Bezirksregion ab und
+            untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch
+            Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion.
             <br />Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Der Berliner Bezirksregionen
             Monitor bildet wiederum 22 Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab. Nachfolgend werden die 5
             Rubriken und ihre dazugehörigen Kernindikatoren kurz beschrieben ======= und bezirksübergreifend gewährleistet werden
-            soll.
-            beschrieben >>>>>>> origin/update/about
+            soll. beschrieben >>>>>>> origin/update/about
           </p>
 
           <v-expansion-panels accordion>
@@ -283,8 +282,7 @@
               >https://github.com/technologiestiftung/bezirksregionenprofile_2_0</a
             >
           </p>
-          <<<<<<< HEAD =======
-          >>>>>>> origin/update/about
+          <<<<<<< HEAD ======= >>>>>>> origin/update/about
         </div>
       </v-col>
     </v-row>
