@@ -26,7 +26,15 @@
     </div>
     <div class="indikatoren-menu pt-6">
       <v-row v-if="indDataParsed">
-        <v-col v-for="indikator in indikatorenOverview" :key="indikator.name" :class="activeInd == indikator.id ? 'active' : ''">
+        <v-col
+          v-for="indikator in indikatorenOverview"
+          :key="indikator.name"
+          cols="12"
+          sm="6"
+          md="4"
+          xl=""
+          :class="activeInd == indikator.id ? 'active' : ''"
+        >
           <v-btn text class="w-100" :class="indikator.class" @click="activeInd = parseInt(indikator.id)">{{
             indikator.name
           }}</v-btn>

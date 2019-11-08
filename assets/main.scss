@@ -28,15 +28,16 @@ h3{
     position: relative
 }
 
+
+.container--fluid{
+    max-width: 2200px;
+}
+
 // min width of button that placed on top of map
 .map-dropdown{
     button{
         min-width: 300px !important;
     }
-}
-
-#__nuxt{
-    box-sizing: border-box !important;
 }
 
 // bzr content styles
@@ -108,6 +109,12 @@ h3{
 
 
   // berlin.de adjustments
+
+  #__nuxt{
+    box-sizing: border-box !important;
+}
+
+
   .container-wrapper{
       width: 100%;
       margin-bottom: 0px !important;
