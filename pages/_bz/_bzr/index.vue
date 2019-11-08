@@ -1,5 +1,7 @@
 <template>
   <div>
+    <v-breadcrumbs :items="breadcrumbItems" large></v-breadcrumbs>
+
     <page-header></page-header>
 
     <v-row>
@@ -93,7 +95,22 @@ export default {
     }
   },
   computed: {
-    ...mapState(['bzBzrPrData', 'themen', 'currentBzr']),
+    ...mapState(['bzBzrPrData', 'themen', 'currentBz', 'currentBzr']),
+    breadcrumbItems() {
+      const a = []
+      a.push({
+        to: '/' + this.currentBz.url,
+        text: this.currentBz.name,
+        disabled: false,
+        exact: true
+      })
+      a.push({
+        text: this.currentBzr.name,
+        disabled: true,
+        exact: true
+      })
+      return a
+    },
     // return data sorted by thema
     datenByTheme() {
       const r = []
