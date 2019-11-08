@@ -114,6 +114,8 @@ h3{
 
       .container{
           padding: 0;
-          width: 61.25rem;
+          width: 100%;
+          max-width: 61.25rem;
+          min-width: none;
       }
   }
