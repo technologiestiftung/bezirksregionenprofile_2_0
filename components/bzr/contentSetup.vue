@@ -1,5 +1,5 @@
 <template>
-    <!-- eslint-disable-next-line vue/require-component-is -->
+  <!-- eslint-disable-next-line vue/require-component-is -->
   <component :is="componentName" v-if="componentName" :content-id="contentId" :data-el="dataEl" />
 </template>
 

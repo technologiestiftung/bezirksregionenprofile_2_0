@@ -143,7 +143,7 @@ export default {
     bzrUrl() {
       let u = ''
       if (this.currentBz && this.currentBzr) {
-        u = this.currentBz.url + '/' + this.currentBzr.url
+        u = '/' + this.currentBz.url + '/' + this.currentBzr.url
       }
       return u
     },
