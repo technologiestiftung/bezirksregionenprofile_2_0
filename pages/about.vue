@@ -59,7 +59,6 @@
             <a href="https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung"
               >Mehr Informationen zur Sozialraumentwicklung</a
             >
-            ======= Mit dem Berliner Bezirksregionen Monitor ist eine Web-App ins Leben gerufen wurden, die Berlin auf dem Weg der
           </p>
 
           <h2>Datengrundlage</h2>
