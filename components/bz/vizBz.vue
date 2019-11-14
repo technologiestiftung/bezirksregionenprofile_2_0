@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-3 viz-bz">
+  <div class="mt-3">
     <svg :id="id">
       <rect x="0%" y="0%" width="100%" height="100%" class="background-rect" />
       <rect x="50%" y="0%" width="0%" height="100%" :class="[activeIndClass, 'ani-rect']" />
@@ -162,108 +162,106 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '~@/assets/variables';
 
-.viz-bz {
-  div {
-    text-align: center;
+div {
+  text-align: center;
+}
+
+svg {
+  width: 100%;
+  height: 50px;
+  overflow: visible;
+  display: inline-block;
+
+  .background-rect {
+    fill: white;
   }
 
-  svg {
-    width: 100%;
-    height: 50px;
-    overflow: visible;
-    display: inline-block;
-
-    .background-rect {
-      fill: white;
-    }
-
-    .tick {
-      stroke: #333;
-      stroke-width: 1;
-      stroke-dasharray: 2;
-    }
-
-    .compare-line {
-      stroke-width: 2;
-      stroke: #333;
-    }
-
-    text {
-      text-anchor: middle;
-      font-size: 14px;
-    }
-
-    text.label-top {
-      color: #333;
-      transform: translate(0px, -7px);
-      font-size: 14px;
-    }
-
-    text.label {
-      transform: translate(0px, 20px);
-    }
-
-    text.static {
-      color: #000;
-      font-weight: 700;
-    }
-
-    .bzr {
-      text-anchor: middle;
-    }
-
-    rect {
-      // opacity:.85;
-    }
-
-    .ani-rect {
-      fill-opacity: 0.8;
-    }
-  }
-
-  .indGr1 {
-    fill: $color-indGr1;
-  }
-  .indGr2 {
-    fill: $color-indGr2;
-  }
-  .indGr3 {
-    fill: $color-indGr3;
-  }
-  .indGr4 {
-    fill: $color-indGr4;
-  }
-  .indGr5 {
-    fill: $color-indGr5;
-  }
-  .indGr6 {
-    fill: $color-indGr6;
+  .tick {
+    stroke: #333;
+    stroke-width: 1;
+    stroke-dasharray: 2;
   }
 
   .compare-line {
-    stroke-width: 2px;
+    stroke-width: 2;
+    stroke: #333;
   }
 
-  .indGr1.compare-line {
-    stroke: $color-indGr1;
+  text {
+    text-anchor: middle;
+    font-size: 14px;
   }
-  .indGr2.compare-line {
-    stroke: $color-indGr2;
+
+  text.label-top {
+    color: #333;
+    transform: translate(0px, -7px);
+    font-size: 14px;
   }
-  .indGr3.compare-line {
-    stroke: $color-indGr3;
+
+  text.label {
+    transform: translate(0px, 20px);
   }
-  .indGr4.compare-line {
-    stroke: $color-indGr4;
+
+  text.static {
+    color: #000;
+    font-weight: 700;
   }
-  .indGr5.compare-line {
-    stroke: $color-indGr5;
+
+  .bzr {
+    text-anchor: middle;
   }
-  .indGr6.compare-line {
-    stroke: $color-indGr6;
+
+  rect {
+    // opacity:.85;
   }
+
+  .ani-rect {
+    fill-opacity: 0.8;
+  }
+}
+
+.indGr1 {
+  fill: $color-indGr1;
+}
+.indGr2 {
+  fill: $color-indGr2;
+}
+.indGr3 {
+  fill: $color-indGr3;
+}
+.indGr4 {
+  fill: $color-indGr4;
+}
+.indGr5 {
+  fill: $color-indGr5;
+}
+.indGr6 {
+  fill: $color-indGr6;
+}
+
+.compare-line {
+  stroke-width: 2px;
+}
+
+.indGr1.compare-line {
+  stroke: $color-indGr1;
+}
+.indGr2.compare-line {
+  stroke: $color-indGr2;
+}
+.indGr3.compare-line {
+  stroke: $color-indGr3;
+}
+.indGr4.compare-line {
+  stroke: $color-indGr4;
+}
+.indGr5.compare-line {
+  stroke: $color-indGr5;
+}
+.indGr6.compare-line {
+  stroke: $color-indGr6;
 }
 </style>

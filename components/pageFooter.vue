@@ -51,7 +51,7 @@
   </v-footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 footer.v-footer {
   position: relative !important;
   ul {
