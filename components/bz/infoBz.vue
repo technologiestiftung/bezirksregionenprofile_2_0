@@ -127,7 +127,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import vizBz from '~/components/bz/VizBz.vue'
+import vizBz from '~/components/bz/vizBz.vue'
 export default {
   components: { vizBz },
   props: {},
