@@ -8,28 +8,26 @@
           <br />
           <h2>Über das Projekt</h2>
           <p>
-            Digitalisierung unterstützen soll. Der Monitor ist ein Projekt des Ideation und Protoyping Lab der Technologiestiftung
-            Berlin, dass die Bezirksregioneprofile Berlins im Web abbildet und darüber hinaus in einer interaktiven Anwendung
-            erlebbar macht.
-            <br />
-            <br />
-            Dabei erweist sich der Monitor in zweierlei Hinsicht als nützliches Tool: sowohl für die Berliner Verwaltung und deren
-            Datenkoordinator*Innen, die die Profile erstellen, als auch für die Bürgerinnen und Bürger Berlins, die einen Einblick
-            in die Sozialraumplanung und -entwicklung Berlins erhalten. Die 138 Bezirksregion der 12 Berliner Bezirke können mit
-            Hilfe sogenannter Kernindikatoren in fünf Kategorien eingeteilt und somit ganzheitlich und erstmalig spielerisch mit
-            den Daten anderer Regionen, beispielsweise gesamt Berlin, verglichen werden.
+            Diese Webanwendung zu Bezirksregionenprofilen ist ein Projekt der
             <strong
-              >Ideation und Protoyping Lab der
+              >Open Data Informationsstelle der
               <a href="https://www.technologiestiftung-berlin.de/">Technologiestiftung Berlin</a></strong
-            >, dass die Bezirksregioneprofile in einer interaktiven Anwendung erlebbar macht. Tempelhof-Schöneberg hat als erster
-            Bezirk die Daten aufbereitet und über diese Webanwendung bereitgestellt. Dabei erweist es sich in zweierlei Hinsicht
-            als nützliches Tool: sowohl für die Berliner Verwaltung und deren Datenkoordinator*Innen, die die Profile erstellen,
-            als auch für die Bürgerinnen und Bürger Berlins, die einen Einblick in die Sozialraumplanung und -entwicklung Berlins
-            erhalten. Die 138 Bezirksregionen der 12 Berliner Bezirke können mit Hilfe sogenannter Kernindikatoren in fünf
-            Kategorien eingeteilt und somit ganzheitlich und erstmalig spielerisch mit den Daten anderer Regionen, beispielsweise
-            gesamt Berlin, verglichen werden. In den Datenprofilen der einzelnen Bezirksregionen befinden sich weitere
-            detaillierte Daten und Informationen zu den Regionen.
+            >, dass die Bezirksregioneprofile Berlins im Web abbildet und darüber hinaus in einer interaktiven Anwendung erlebbar
+            macht.
           </p>
+          <p>
+            Tempelhof-Schöneberg hat als erster Bezirk die Daten aufbereitet und über diese Webanwendung bereitgestellt.
+          </p>
+          <p>
+            Dabei erweist sich dieses digitale Bezirksregionenprofil in zweierlei Hinsicht als nützliches Tool: sowohl für die
+            Berliner Verwaltung und deren Datenkoordinator*innen, die die Profile erstellen, als auch für die Bürgerinnen und
+            Bürger Berlins, die einen Einblick in die Sozialraumplanung und -entwicklung Berlins erhalten. Die 138 Bezirksregion
+            der 12 Berliner Bezirke können mit Hilfe sogenannter Kernindikatoren in fünf Kategorien eingeteilt und somit
+            ganzheitlich und erstmalig spielerisch mit den Daten anderer Regionen, beispielsweise gesamt Berlin, verglichen
+            werden. In den Datenprofilen der einzelnen Bezirksregionen befinden sich weitere detaillierte Daten und Informationen
+            zu den Regionen.
+          </p>
+
           <p>
             Im Sinne der Förderung von Open Data Projekten ist der
             <a href="https://github.com/technologiestiftung/bezirksregionenprofile_2_0"
@@ -63,10 +61,11 @@
 
           <h2>Datengrundlage</h2>
           <p>
-            Die Datenbasis der Kernindikatoren werden von den Datenkoordinator*innen vom Amt für Statistik Berlin-Brandenburg
-            bereitgestellt.
-            <br />
-            <br />
+            Die Datenbasis der Kernindikatoren werden vom Amt für Statistik Berlin-Brandenburg bereitgestellt und im Rahmen der
+            Bezirksregionenprofile veröffentlicht.
+          </p>
+
+          <p>
             Die Datenkoordinator*innen der einzelnen Bezirke wiederum erstellen die Bezirksregionenprofile auf Basis der
             Kernindikatoren in einer vorgegeben Struktur von 14 Gliederungspunkten:
           </p>
@@ -89,17 +88,17 @@
             </li>
             <li>Zusammenfassung: Potenziale und Herausforderungen</li>
           </ol>
+
           <p>
-            Die im Prototyp abgebildeten Datenprofile der einzelnen Bezirksregionen wurden von den jeweiligen
-            Datenkoordinator*innen eines Bezirks erstellt und in enger Zusammenarbeit mit dem Ideation & Protoyping Lab für die
-            Darstellung auf der Website optimiert. Die Inhalte der Profile der Web-App sind inhaltlich identisch zu den
-            ursprünglichen Profilen, auf die auf den entsprechenden Subpages verlinkt wird. Die interaktive Datenvisualisierung
-            wiederum ist ein Feature, welches eigens für den webbasierten Monitor entwickelt wurde und einen signifikanten
-            Mehrwert schafft.
+            Die Inhalte stammen aus den, durch die Bezirksämter veröffentlichten, Bezirksregionenprofilen.
+            <br />
+            <a
+              href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/bzrp-677061.php"
+              >Hier können die Bezirksregionenprofile von Tempelhof-Schöneberg heruntergeladen werden.</a
+            >
           </p>
 
-          <br />
-          <h2>Beschreibung der einzelnen Kernindikatoren</h2>
+          <h2 id="indikators">Was sind Kernindikatoren?</h2>
           <p>
             Die Kernindikatoren sind ein berlinweit abgestimmtes Indikatorenset, mit dem im Rahmen der integrierten
             Stadtteilentwicklung die Vergleichbarkeit der Ist-Situation und der Entwicklung in den Bezirksregionen bezirksintern
@@ -111,24 +110,11 @@
           </p>
 
           <p>
-            Die Kernindikatoren sind ein berlinweit abgestimmtes Indikatorenset, mit dem im Rahmen der integrierten
-            Stadtteilentwicklung die Vergleichbarkeit der Ist-Situation und der Entwicklung in den Bezirksregionen bezirksintern
-            <br />
-            <br />
             Die Kernindikatoren bilden dabei sozialräumliche Daten zur demografischen Struktur einer Bezirksregion ab und
             untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch
             Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion. Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken
             zugeordnet werden können. Der Berliner Bezirkregionen Monitor bildet wiederum 22 (E4 wird nicht erfasst)
-            Kernidikatoren aus 5 Rubriken ab. Nachfolgend werden die 5 Rubriken und ihre dazugehörigen Kernindikatoren kurz
-            dazugehörigen Kernindikatoren kurz beschrieben.
-          </p>
-          <h2 id="indikators">Was sind Kernindikatoren?</h2>
-          <p>
-            Die Kernindikatoren bilden dabei sozialräumliche Daten zur demografischen Struktur einer Bezirksregion ab und
-            untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch
-            Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion.
-            <br />Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Der Berliner Bezirksregionen
-            Monitor bildet wiederum 22 Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab.
+            Kernidikatoren aus 5 Rubriken ab.
           </p>
           <!-- 
           <v-expansion-panels accordion>
@@ -201,84 +187,6 @@
             </v-expansion-panel>
           </v-expansion-panels>
  -->
-          <br />
-          <br />
-          <h3>Über die Bezirksregionenprofile</h3>
-          <h3>Bezirksregionenprofile als Entwicklungshilfe</h3>
-          <p>
-            Die Bezirksregionenprofile sind ein wesentlicher Baustein für die Umsetzung der Sozialraumorientierung im Kontext der
-            Rahmenstrategie Soziale Stadt(teil)Entwicklung. Sie beschreiben den Ist-Zustand und die Entwicklung der
-            Bezirksregionen. Sie bilden eine einheitliche und berlinweit abgestimmte Arbeits- und Verständigungsgrundlage für ein
-            sozialraumorientiertes, gemeinsames und abgestimmtes Handeln von Verwaltung, Politik, lokalen Akteuren und
-            Bewohnerinnen und Bewohnern.
-            <br />
-            <br />
-            Mit den Bezirksregionenprofilen wird ein Überblick über die vielschichtigen Herausforderungen und parallelen
-            Entwicklungsprozesse auf Ebene der Bezirksregionen, wie auch ein aktueller Überblick über die Fachplanungen
-            ermöglicht. Das Bezirksregionenprofil kann dabei keine fachlichen Entscheidungen und politischen Aushandlungsprozesse
-            über Maßnahmen und Mittelverteilung ersetzen. Vielmehr soll es einen qualifizierten Einblick in die aktuelle Situation
-            der Bezirksregion geben. Die Bezirksregionenprofile bilden die Grundlage für „Data Driven Decision Making“ der
-            Stadtentwicklungspolitik und geben Aufschluss über soziale, bauliche, wirtschaftliche und infrastrukturelle
-            Komponenten der Stadt Berlin.
-            <br />
-          </p>
-          <p>
-            Mehr Informationen zur Sozialraumentwicklung sind unter folgenden Link einsehbar:
-          </p>
-          <p>
-            <a href="https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung/" target="_blank"
-              >https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung/</a
-            >
-          </p>
-
-          <br />
-          <h3>Aufbau der Bezirksregionenprofile</h3>
-          <p>
-            Bezirksregionenprofile enthalten eine Analyse (Teil I – Analyse und Beschreibung) und einen konzeptionellen Teil (Teil
-            II – Ziele und Maßnahmen).
-            <br />
-            <br />
-            Die Basis des Analyseteils Teil I sind sogenannte Kernindikatoren und statistische Grunddaten des Amtes für Statistik
-            Berlin-Brandenburg. Diese Daten werden zwischen den Senatsverwaltungen und Bezirken Berlins abgestimmt, in einem
-            Datenpool zusammengetragen und jährlich zur Verfügung gestellt.
-            <br />
-            <br />
-            Der konzeptionelle Teil II ist darauf ausgerichtet Maßnahmen und Ziele zum einen mit den Fachämtern und zum anderen
-            mit lokalen Akteuren sowie den Bürgerinnen und Bürger in einer Bezirksregion zu erarbeiten. Dadurch kann eine
-            übergeordnete und interdisziplinäre Betrachtung der Bedarfe und Potenziale vorgenommen und eine integrierte
-            Zielsetzungen festgelegt werden.
-            <br />
-            <br />
-            Die Gliederung der Profile ist in Berlin einheitlich. Damit wird eine innerbezirkliche und berlinweite
-            Vergleichbarkeit ermöglicht. Neben den statistischen Fakten enthält das Bezirksregionenprofil weitere, lokal erhobene,
-            Daten und fachliche Stellungnahmen. Die einzelnen Bausteine des Bezirksregionenprofils werden ämterübergreifend
-            erarbeitet („integriertes Profil“). Die Erstellung erfolgt stufenweise.
-          </p>
-
-          <br />
-
-          <h3>Fortschreibung</h3>
-          <p>
-            Die Fortschreibung des Teil I der Bezirksregionenprofile erfolgt in einem zweijährigen Rhythmus, die Federführung
-            liegt bei der Datenkoordination der Organisationseinheit Sozialraumorientierte Planungskoordination.
-          </p>
-          <p>
-            <a
-              href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/bzrp-677061.php"
-              target="_blank"
-              >Quelle: Bezirksamt Tempelhof-Schöneberg</a
-            >
-          </p>
-          <p>
-            Die Technologiestiftung Berlin möchte im nächsten Schritt über eine Finalisierung der Umsetzung nachdenken und den
-            Prototypen weiterentwickeln und eine bezirksübergreifende Zusammenarbeit und Modernisierung der Bezirksämter bewirken.
-            Im Sinne der Förderung von Open Data Projekten ist der Source-Code der des Protoypen unter folgenden Link einsehbar:
-          </p>
-          <p>
-            <a href="https://github.com/technologiestiftung/bezirksregionenprofile_2_0" target="_blank"
-              >https://github.com/technologiestiftung/bezirksregionenprofile_2_0</a
-            >
-          </p>
         </div>
       </v-col>
     </v-row>
