@@ -52,9 +52,9 @@
       <v-col v-for="(indikator, index) in indikatorenOverview[activeInd].indikatoren" :key="index" cols="12" class="viz pb-5">
         <div class="d-flex justify-space-between align-end pb-2">
           <div>
-            <h3 class="mb-0 pr-5">{{ indikator['name'] }}</h3>
+            <h3 class="mb-0 pr-5">{{ indikator['text-sm'] }} (KID: {{ indikator['name'] }})</h3>
             <div class="info-text">
-              {{ indikator['text-sm'] }}: <b>{{ indDataParsed[indikator.name].val }}</b>
+              <b>{{ indDataParsed[indikator.name].val }} {{ indikator['unit'] }}</b>
             </div>
           </div>
           <v-tooltip left>
