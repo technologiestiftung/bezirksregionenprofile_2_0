@@ -102,14 +102,19 @@ export default {
     }
   },
   async asyncData({ params }) {
-    const { data } = await axios.get(process.env.apiUrl + `/bz-data/tempelhofschoeneberg/bz-overview.json`)
+    const { data } = await axios.get(process.env.apiUrl + `/bz-data/${params.bz}/bz-overview.json`)
     return { bzOverview: data }
   },
   async fetch({ store, params, error }) {
     await store.dispatch('loadBaseData')
-    store.commit('setCurrentBz', 'tempelhofschoeneberg')
-    await store.dispatch('loadCurrentBzIndikatorenData')
-    await store.dispatch('loadCurrentBzIndikatorenBzrData')
+    if (!store.state.bzBzrPrData[params.bz]) {
+      error({ statusCode: 404 })
+    } else {
+      store.commit('setCurrentBz', params.bz)
+
+      await store.dispatch('loadCurrentBzIndikatorenData')
+      await store.dispatch('loadCurrentBzIndikatorenBzrData')
+    }
   },
   mounted() {
     this.$store.commit('setCurrentBzr', null) // reset bzr to null
