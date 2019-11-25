@@ -25,8 +25,8 @@ Adjust urls in packagejson
 ```npm run generate```
 
 ## Content page data structure (BZR page)
-Availble content elements: 
-* title - This is a healine element
+Available content elements: 
+* title - healine element
 * text - text block
 * image - image with headline
 * barchart - barchart with headline
