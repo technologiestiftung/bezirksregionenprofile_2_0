@@ -3,45 +3,20 @@
     <v-container fluid class="px-3 pb-8 px-sm-5 px-md-8 px-lg-12">
       <v-row no-gutters>
         <v-col>
-          <ul class="d-flex justify-center justify-lg-end social-icons">
-            <li>
-              <a target="_blank" href="https://twitter.com/tsbberlin"><v-icon>mdi-twitter</v-icon></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.facebook.com/Technologiestiftung/"><v-icon>mdi-facebook-box</v-icon></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/technologiestiftung/"><v-icon>mdi-github-circle</v-icon></a>
-            </li>
-          </ul>
-        </v-col>
-      </v-row>
-      <v-row no-gutters>
-        <v-col>
           <div class="d-flex flex-column flex-lg-row">
-            <div class="d-flex flex-column flex-lg-row">
-              <img class="mr-6" alt="Technologiestiftung Berlin Logo" src="/img/tsb-logo-content.svg" />
-              <address class="mt-4 mt-lg-0 ml-2">
-                Grunewaldstraße 61-62<br />
-                10825 Berlin<br />
-                <a href="mailto:info@technologiestiftung-berlin.de">info@technologiestiftung&#8209;berlin.de</a><br />
-              </address>
-            </div>
-
             <ul class="pl-2 mt-7 mt-lg-0 ml-lg-12 mr-lg-12">
               <li>
-                <a target="_blank" href="https://www.technologiestiftung-berlin.de/de/stiftung/kontakt-anfahrt/">Kontakt</a>
+                <a target="_blank" href="https://www.berlin.de/ba-tempelhof-schoeneberg/allgemeine-infos/artikel.350989.php"
+                  >Impressum</a
+                >
               </li>
               <li>
-                <a target="_blank" href="https://www.technologiestiftung-berlin.de/de/impressum">Impressum</a>
+                <a target="_blank" href="https://www.berlin.de/ba-tempelhof-schoeneberg/datenschutzerklaerung.700798.php"
+                  >Datenschutz</a
+                >
               </li>
               <li>
-                <a target="_blank" href="https://www.technologiestiftung-berlin.de/de/datenschutz/">Datenschutz</a>
-              </li>
-            </ul>
-            <ul class="pl-2 mt-7 mt-lg-0 ">
-              <li>
-                <nuxt-link to="/about">Über den Monitor</nuxt-link>
+                <nuxt-link to="/about">Über das Projekt</nuxt-link>
               </li>
             </ul>
           </div>
