@@ -24,7 +24,7 @@ export const state = () => ({
   indikatorenOverview: null,
   bzBzrPrData: null,
   mapStyle,
-  mapColors: ['#1E3791', '#E60032'],
+  mapColors: ['#253276', '#e10611'],
   bezirkeGeojson: null,
   currentBz: null,
   currentBzr: null,
