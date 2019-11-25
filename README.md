@@ -28,11 +28,11 @@ Adjust urls in packagejson
 Available content elements: 
 * title - healine element
 * text - text block
-* image - image with headline
-* barchart - barchart with headline
-* linechart - linechart with headline
+* image - image with optional headline
+* barchart - barchart with optional headline
+* linechart - linechart with optional headline
 * map-pr - heatmap for all Planungsräume within the current Bezirksregion
-* map-poi - map with markers
+* map-poi - map with markers for current Bezirksregion
 
 ### Example dataset with all content elements
 ```
@@ -65,12 +65,12 @@ Available content elements:
             {
                 "filedname1": "value_1_row_1",
                 "filedname2": "value_2_row_1",
-                "filedname3": "value_1_row_1"
+                "filedname3": "value_3_row_1"
             },
             {
                 "filedname1": "value_1_row_2",
                 "filedname2": "value_2_row_2",
-                "filedname3": "value_1_row_2"
+                "filedname3": "value_3_row_2"
             }
         ]
     },
