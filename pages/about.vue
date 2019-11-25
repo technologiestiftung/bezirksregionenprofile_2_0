@@ -1,9 +1,11 @@
 <template>
   <div>
+    <v-breadcrumbs class="mb-8" :items="breadcrumbItems" large></v-breadcrumbs>
+
     <page-header></page-header>
 
     <v-row>
-      <v-col cols="12" lg="8" class="grey lighten-4 pa-12">
+      <v-col cols="12" xl="8">
         <div>
           <br />
           <h2>Über das Projekt</h2>
@@ -309,7 +311,20 @@ export default {
   },
   data() {
     return {
-      showMore: false
+      showMore: false,
+      breadcrumbItems: [
+        {
+          to: '/',
+          text: 'Tempelhof-Schöneberg',
+          disabled: false,
+          exact: true
+        },
+        {
+          text: 'About',
+          disabled: true,
+          exact: true
+        }
+      ]
     }
   }
 }
