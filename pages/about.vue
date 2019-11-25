@@ -105,16 +105,8 @@
             und bezirksübergreifend gewährleistet werden soll. Die Kernindikatoren bilden dabei sozialräumliche Daten zur
             demografischen Struktur einer Bezirksregion ab und untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen
             für Kinder und Jugendliche oder aber auch Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion. Insgesamt
-            gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Der Berliner Bezirksregionen Monitor bildet
-            wiederum 22 Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab. Nachfolgend werden die 5 Rubriken und ihre
-          </p>
-
-          <p>
-            Die Kernindikatoren bilden dabei sozialräumliche Daten zur demografischen Struktur einer Bezirksregion ab und
-            untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch
-            Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion. Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken
-            zugeordnet werden können. Der Berliner Bezirkregionen Monitor bildet wiederum 22 (E4 wird nicht erfasst)
-            Kernidikatoren aus 5 Rubriken ab.
+            gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Diese Webanwendung bildet wiederum 22
+            Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab.
           </p>
           <!-- 
           <v-expansion-panels accordion>
