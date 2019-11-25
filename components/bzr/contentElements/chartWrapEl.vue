@@ -1,5 +1,6 @@
 <template>
-  <div v-if="dataEl">
+  <div v-if="dataEl" role="application" :aria-label="dataEl.content">
+    >
     <h5 v-if="dataEl.content !== ''">{{ dataEl.content }}</h5>
     <chart-line v-if="dataEl.type === 'linechart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-line>
     <chart-bar v-if="dataEl.type === 'barchart'" :data-sets="dataSets" :data="dataEl.data" :alt="dataEl.alt"></chart-bar>
