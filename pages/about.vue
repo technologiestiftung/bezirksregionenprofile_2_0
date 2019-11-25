@@ -128,11 +128,9 @@
             untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen für Kinder und Jugendliche oder aber auch
             Stabilität und Dynamik der Wohnbevölkerung einer Bezirksregion.
             <br />Insgesamt gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Der Berliner Bezirksregionen
-            Monitor bildet wiederum 22 Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab. Nachfolgend werden die 5
-            Rubriken und ihre dazugehörigen Kernindikatoren kurz beschrieben ======= und bezirksübergreifend gewährleistet werden
-            soll. beschrieben >>>>>>> origin/update/about
+            Monitor bildet wiederum 22 Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab.
           </p>
-
+          <!-- 
           <v-expansion-panels accordion>
             <v-expansion-panel>
               <v-expansion-panel-header>Wohnen</v-expansion-panel-header>
@@ -202,7 +200,7 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
-
+ -->
           <br />
           <br />
           <h3>Über die Bezirksregionenprofile</h3>
