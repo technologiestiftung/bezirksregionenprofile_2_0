@@ -103,15 +103,14 @@
             <h3>Wie die Grafiken zu lesen sind</h3>
             <p>
               Für jeden Kernindikator wird der Wert des Bezirks (der Bezirksregion) mit Berlin (bzw. für Bezirksregionen wahlweise
-              mit Berlin oder dem Bezirk) verglichen. Die Abweichung vom Vergleichswert wird in Prozent angezeigt. Kurzinfo zu den
-              Kernindikatoren
+              mit Berlin oder dem Bezirk) verglichen. Die Abweichung vom Vergleichswert wird in Prozent angezeigt.
             </p>
             <h3>Kurzinfo zu den Kernindikatoren</h3>
             <p>
               Ein Hover über das <v-icon size="20">mdi-information</v-icon> bei jedem Kernindikator zeigt eine ausführlichere
               Erklärung des Indikators sowie den genauen Wert an. Ausfürliche Info zu den Kernindikatoren Hier klicken
             </p>
-            <h3>Ausfürliche Info zu den Kernindikatoren</h3>
+            <h3>Ausfürliche Informationen</h3>
             <p>
               <v-btn class="mt-1" tile color="primary" small to="/about#indikators">
                 <v-icon left>mdi-arrow-right</v-icon>
