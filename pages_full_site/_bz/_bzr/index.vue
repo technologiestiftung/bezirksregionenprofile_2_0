@@ -211,6 +211,9 @@ ul.bzr-content {
   padding: 0;
   li {
     list-style: none;
+    line-height: 2em;
+    font-size: medium;
+
   }
 }
 
