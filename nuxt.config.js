@@ -1,6 +1,6 @@
 // import colors from 'vuetify/es5/util/colors'
-import axios from 'axios'
-
+// import axios from 'axios'
+import fetch from 'node-fetch'
 export default {
   vue: {
     config: {
