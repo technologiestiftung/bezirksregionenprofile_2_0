@@ -1,6 +1,7 @@
 // import colors from 'vuetify/es5/util/colors'
 // import axios from 'axios'
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch'
+const fetch = require('node-fetch')
 export default {
   vue: {
     config: {
@@ -114,6 +115,7 @@ export default {
     async routes() {
       const res = await fetch(process.env.API_URL + '/generated/routes.json')
       if (res.ok === false) {
+        console.error(res)
         throw new Error('could not fetch data from API_URL')
       }
       const json = await res.json()
