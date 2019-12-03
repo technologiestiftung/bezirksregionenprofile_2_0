@@ -112,8 +112,13 @@ export default {
     concurrency: 3,
     // routes: ['tempelhofschoeneberg/schoenebergnord']
     async routes() {
-      const res = await axios.get(process.env.API_URL + '/generated/routes.json')
-      return res.data
+      const res = await fetch(process.env.API_URL + '/generated/routes.json')
+      if (res.ok === false) {
+        throw new Error('could not fetch data from API_URL')
+      }
+      const json = await res.json()
+      // const res = await axios.get(process.env.API_URL + '/generated/routes.json')
+      return json
     }
   },
   /*
