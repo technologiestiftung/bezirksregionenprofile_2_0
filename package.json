@@ -5,11 +5,11 @@
   "author": "Berliner Bezirksregionenprofile, Ralph Schulz",
   "private": true,
   "scripts": {
-    "dev": "API_URL=https://tsb.ara.uberspace.de/bezirksregionen/data/ nuxt",
+    "dev": "API_URL=https://bezirksregionenprofile-data-dev.s3.eu-central-1.amazonaws.com/data  nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "generate:withenvs": "BASE_URL=http://b.rgb3000.com API_URL=https://tsb.ara.uberspace.de/bezirksregionen/data/ nuxt generate",
+    "generate:withenvs": "BASE_URL=https://bezirksregionenprofile-ts.netlify.com  API_URL=https://bezirksregionenprofile-data-dev.s3.eu-central-1.amazonaws.com/data  nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
