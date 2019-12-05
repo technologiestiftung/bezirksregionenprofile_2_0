@@ -29,13 +29,13 @@
         <v-col
           v-for="indikator in indikatorenOverview"
           :key="indikator.name"
+          :class="activeInd == indikator.id ? 'active' : ''"
           cols="12"
           sm="6"
           md="4"
           xl=""
-          :class="activeInd == indikator.id ? 'active' : ''"
         >
-          <v-btn text class="w-100" :class="indikator.class" @click="activeInd = parseInt(indikator.id)">{{
+          <v-btn :class="indikator.class" @click="activeInd = parseInt(indikator.id)" text class="w-100">{{
             indikator.name
           }}</v-btn>
         </v-col>
@@ -59,7 +59,7 @@
           </div>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
-              <v-btn aria-label="Weitere Informationen zu Diagramm" color="primary" text icon v-on="on"
+              <v-btn v-on="on" aria-label="Weitere Informationen zu Diagramm" color="primary" text icon
                 ><v-icon>mdi-information</v-icon></v-btn
               >
             </template>
@@ -86,7 +86,7 @@
       </v-col>
     </v-row>
     <v-row class="justify-end pt-5">
-      <v-btn class="mx-2" tile large color="primary" @click="overlay = true"> <v-icon left light>mdi-help</v-icon> Hilfe </v-btn>
+      <v-btn @click="overlay = true" class="mx-2" tile large color="primary"> <v-icon left light>mdi-help</v-icon> Hilfe </v-btn>
     </v-row>
 
     <div class="my-modal">
@@ -94,7 +94,7 @@
         <v-card light class="mx-auto pa-3 pa-md-4">
           <v-card-title>
             <div class="d-flex justify-end w-100 align-center">
-              <v-btn icon @click="overlay = false">
+              <v-btn @click="overlay = false" icon>
                 <v-icon size="40">mdi-close</v-icon>
               </v-btn>
             </div>
@@ -226,26 +226,32 @@ export default {
   .indGr1 {
     color: $color-indGr1;
     border-bottom: 3px solid $color-indGr1;
+    filter: contrast(0.3);
   }
   .indGr2 {
     color: $color-indGr2;
     border-bottom: 3px solid $color-indGr2;
+    filter: contrast(0.3);
   }
   .indGr3 {
     color: $color-indGr3;
     border-bottom: 3px solid $color-indGr3;
+    filter: contrast(0.5);
   }
   .indGr4 {
     color: $color-indGr4;
     border-bottom: 3px solid $color-indGr4;
+    filter: contrast(0.3);
   }
   .indGr5 {
     color: $color-indGr5;
     border-bottom: 3px solid $color-indGr5;
+    filter: contrast(0.5);
   }
   .indGr6 {
     color: $color-indGr6;
     border-bottom: 3px solid $color-indGr6;
+    filter: contrast(0.3);
   }
 }
 </style>

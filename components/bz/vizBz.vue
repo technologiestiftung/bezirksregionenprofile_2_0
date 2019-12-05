@@ -2,7 +2,7 @@
   <div class="mt-3">
     <svg :id="id">
       <rect x="0%" y="0%" width="100%" height="100%" class="background-rect" />
-      <rect x="50%" y="0%" width="0%" height="100%" :class="[activeIndClass, 'ani-rect']" />
+      <rect :class="[activeIndClass, 'ani-rect']" x="50%" y="0%" width="0%" height="100%" />
 
       <!-- delete label min and max as long as it is not correct with data -->
       <text x="0%" y="0%" class="label-top"></text>
@@ -14,9 +14,9 @@
       <text :id="compareSelectedName" x="50%" y="0%" class="label-top static">
         {{ compareSelectedName }} : {{ averageValue }}
       </text>
-      <text x="50%" y="100%" :class="[activeIndClass, 'label', 'bzr']">{{ compareWidth }}</text>
+      <text :class="[activeIndClass, 'label', 'bzr']" x="50%" y="100%">{{ compareWidth }}</text>
 
-      <line x1="50%" x2="50%" y1="100%" y2="0%" :class="[activeIndClass, 'compare-line']"></line>
+      <line :class="[activeIndClass, 'compare-line']" x1="50%" x2="50%" y1="100%" y2="0%"></line>
 
       <line x1="0%" x2="0" y1="100%" y2="0%" class="tick"></line>
       <line x1="50%" x2="50%" y1="100%" y2="0%" class="tick"></line>
@@ -225,21 +225,27 @@ svg {
 
 .indGr1 {
   fill: $color-indGr1;
+  filter: contrast(0.3);
 }
 .indGr2 {
   fill: $color-indGr2;
+  filter: contrast(0.3);
 }
 .indGr3 {
   fill: $color-indGr3;
+  filter: contrast(0.3);
 }
 .indGr4 {
   fill: $color-indGr4;
+  filter: contrast(0.3);
 }
 .indGr5 {
   fill: $color-indGr5;
+  filter: contrast(0.3);
 }
 .indGr6 {
   fill: $color-indGr6;
+  filter: contrast(0.3);
 }
 
 .compare-line {
