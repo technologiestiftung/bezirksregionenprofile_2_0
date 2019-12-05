@@ -6,7 +6,7 @@
         <v-img :src="dataEl.datasource" :lazy-src="dataEl.datasource.replace('.png', '-thumbnail.png')" :alt="dataEl.alt">
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0 " align="center" justify="center">
-              <v-progress-circular indeterminate :size="80" color="primary"></v-progress-circular>
+              <v-progress-circular :size="80" indeterminate color="primary"></v-progress-circular>
             </v-row>
           </template>
         </v-img>
