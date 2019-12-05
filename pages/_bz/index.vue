@@ -14,7 +14,7 @@
           <div class="map-dropdown">
             <v-menu v-model="menuOpen" offset-y>
               <template v-slot:activator="{ on }">
-                <v-btn color="primary" dark v-on="on">
+                <v-btn v-on="on" color="primary" dark>
                   {{ selectedName }}
                 </v-btn>
               </template>

@@ -29,13 +29,13 @@
         <v-col
           v-for="indikator in indikatorenOverview"
           :key="indikator.name"
+          :class="activeInd == indikator.id ? 'active' : ''"
           cols="12"
           sm="6"
           md="4"
           xl=""
-          :class="activeInd == indikator.id ? 'active' : ''"
         >
-          <v-btn text class="w-100" :class="indikator.class" @click="activeInd = parseInt(indikator.id)">{{
+          <v-btn :class="indikator.class" @click="activeInd = parseInt(indikator.id)" text class="w-100">{{
             indikator.name
           }}</v-btn>
         </v-col>
@@ -59,7 +59,7 @@
           </div>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
-              <v-btn aria-label="Weitere Informationen zu Diagramm" color="primary" text icon v-on="on"
+              <v-btn v-on="on" aria-label="Weitere Informationen zu Diagramm" color="primary" text icon
                 ><v-icon>mdi-information</v-icon></v-btn
               >
             </template>
@@ -86,7 +86,7 @@
       </v-col>
     </v-row>
     <v-row class="justify-end pt-5">
-      <v-btn class="mx-2" tile large color="primary" @click="overlay = true"> <v-icon left light>mdi-help</v-icon> Hilfe </v-btn>
+      <v-btn @click="overlay = true" class="mx-2" tile large color="primary"> <v-icon left light>mdi-help</v-icon> Hilfe </v-btn>
     </v-row>
 
     <div class="my-modal">
@@ -94,7 +94,7 @@
         <v-card light class="mx-auto pa-3 pa-md-4">
           <v-card-title>
             <div class="d-flex justify-end w-100 align-center">
-              <v-btn icon @click="overlay = false">
+              <v-btn @click="overlay = false" icon>
                 <v-icon size="40">mdi-close</v-icon>
               </v-btn>
             </div>

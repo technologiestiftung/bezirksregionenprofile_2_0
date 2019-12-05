@@ -2,7 +2,7 @@
   <div class="pb-6">
     <h5 v-if="dataEl.content !== ''">{{ dataEl.content }}</h5>
     <div v-if="dataEl.data && dataEl.data.length > 0">
-      <v-data-table hide-default-footer :headers="headers" :items="dataEl.data" :items-per-page="20"></v-data-table>
+      <v-data-table :headers="headers" :items="dataEl.data" :items-per-page="20" hide-default-footer></v-data-table>
       <small v-if="dataEl.source != ''" class="content-source">{{ dataEl.source }}</small>
     </div>
     <div v-else>

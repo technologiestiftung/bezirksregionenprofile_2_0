@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="grey lighten-2" app :fixed="false">
+  <v-footer :fixed="false" class="grey lighten-2" app>
     <v-container fluid class="px-3 pb-8 px-sm-5 px-md-8 px-lg-12">
       <v-row no-gutters>
         <v-col>
