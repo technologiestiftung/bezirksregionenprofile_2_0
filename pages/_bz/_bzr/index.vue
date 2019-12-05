@@ -4,6 +4,9 @@
 
     <page-header></page-header>
 
+    <div class="btn-container">
+      <v-btn :to="bzUrl" color="primary" nuxt> <v-icon class="mr-3">mdi-arrow-left</v-icon>Zurück zur Übersicht </v-btn>
+    </div>
     <v-row>
       <v-col cols="12">
         <intro-bz :data="bzrOverview" type="Bezirksregion"></intro-bz>
@@ -32,7 +35,7 @@
             </v-list-item-group>
           </v-list>
           <div class=" d-none d-md-flex justify-center mt-10">
-            <v-btn depressed class="mx-2" x-large fab color="primary" @click="$vuetify.goTo(0)">
+            <v-btn @click="$vuetify.goTo(0)" depressed class="mx-2" x-large fab color="primary">
               <v-icon size="26">mdi-arrow-up</v-icon>
             </v-btn>
           </div>
@@ -40,7 +43,7 @@
       </v-col>
       <v-col cols="12" sm="12" md="7" lg="8">
         <ul class="bzr-content mx-n3 mx-sm-n5 mx-md-0 grey lighten-4">
-          <li v-for="thema in themen" :key="thema.name" v-intersect="onIntersect" class="px-5 py-1 pa-lg-10" :data-id="thema.id">
+          <li v-for="thema in themen" :key="thema.name" v-intersect="onIntersect" :data-id="thema.id" class="px-5 py-1 pa-lg-10">
             <!-- Title Thema -->
             <h3 :id="'thema-id-' + thema.id">{{ thema.id }}. {{ thema.name }}</h3>
 
@@ -96,6 +99,9 @@ export default {
   },
   computed: {
     ...mapState(['bzBzrPrData', 'themen', 'currentBz', 'currentBzr']),
+    bzUrl() {
+      return '/' + this.currentBz.url
+    },
     breadcrumbItems() {
       const a = []
       a.push({
@@ -224,5 +230,9 @@ ul.bzr-content {
 .list-container {
   position: sticky;
   top: 0;
+}
+
+.btn-container {
+  margin-top: 36px;
 }
 </style>
