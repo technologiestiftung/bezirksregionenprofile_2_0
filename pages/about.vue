@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-breadcrumbs class="mb-8" :items="breadcrumbItems" large></v-breadcrumbs>
+    <v-breadcrumbs :items="breadcrumbItems" class="mb-8" large></v-breadcrumbs>
 
     <page-header></page-header>
 

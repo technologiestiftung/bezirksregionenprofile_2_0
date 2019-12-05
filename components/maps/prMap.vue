@@ -1,6 +1,6 @@
 <template>
   <div class="h-100">
-    <div class="map-container" :class="mapType">
+    <div :class="mapType" class="map-container">
       <div class="map-container-inner">
         <transition name="fade">
           <div v-if="!mapLoaded" class="map-loader">
@@ -83,7 +83,10 @@ export default {
       // get the bounds of the geojson
       const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
       let selectedBbox = bbox(this.geoJsonBzr)
-      this.bounds = selectedBbox = [[selectedBbox[0], selectedBbox[1]], [selectedBbox[2], selectedBbox[3]]]
+      this.bounds = selectedBbox = [
+        [selectedBbox[0], selectedBbox[1]],
+        [selectedBbox[2], selectedBbox[3]]
+      ]
 
       const mapColor = this.data[0].color
       const mapUnit = this.data[0].einheit
