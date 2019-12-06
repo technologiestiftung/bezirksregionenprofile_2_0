@@ -72,49 +72,73 @@
           </div>
 
           <div>
-            <h3>Rechte der betroffenen Person</h3>
-            <p>Sie haben gegenüber der verantwortlichen Stelle das Recht:</p>
-            <ol>
-              <li>
-                auf Auskunft über die Verarbeitung ihrer personenbezogenen Daten (dazu gehören auch Auskünfte über Zweck,
-                Empfänger und Dauer der Speicherung) nach Art. 15 DSGVO,
-              </li>
-              <li>auf Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
-              <li>auf Löschung gemäß Art. 17 DSGVO,</li>
-              <li>auf Einschränkung der Verarbeitung und Datenübertragbarkeit (Art. 18 und 20 DSGVO) sowie</li>
-              <li>
-                der Verarbeitung Ihrer Daten jederzeit zu widersprechen (Art. 21 DSGVO). Legen Sie Widerspruch ein, werden Ihre
-                personenbezogenen Daten nicht mehr verarbeitet. Eine Ausnahme besteht, soweit zwingende schutzwürdige Gründe
-                bestehen, die gegenüber Ihren Interessen überwiegen.
-              </li>
-            </ol>
-
+            <h3>Ihre Rechte</h3>
             <p>
-              Eine einmal erteilte Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden. Die Rechtmäßigkeit
-              der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung wird dadurch nicht berührt. In diesem Fall
-              können wir Ihnen möglicherweise mit Ihrem Anliegen nicht mehr helfen. Der Widerruf ist zu richten an den
-              behördlichen Datenschutzbeauftragten an die in Ziff. II genannte Kontaktadresse.
+              Sie haben folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:
+            </p>
+            <h4>Recht auf Auskunft</h4>
+            <p>
+              Sie können gemäß Art. 15 Datenschutz-Grundverordnung eine Bestätigung darüber verlangen, insbesondere ob und welche
+              personenbezogene Daten, die Sie betreffen, von uns verarbeitet und an wen diese weiter gegeben werden
+            </p>
+            <h4>Recht auf Berichtigung</h4>
+            <p>
+              Sie haben gemäß Art. 16 Datenschutz-Grundverordnung ein Recht auf Berichtigung und/oder Vervollständigung gegenüber
+              dem Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen, unrichtig oder
+              unvollständig sind.
+            </p>
+            <h4>Recht auf Löschung</h4>
+            <p>
+              Sie haben gemäß Art. 17 Datenschutz-Grundverordnung das Recht, die Löschung der Sie betreffenden personenbezogenen
+              Daten zu verlangen, wenn die Verarbeitung der von Ihnen mitgeteilten Daten nicht mehr erforderlich oder unrechtmäßig
+              ist, Sie Ihre Einwilligung zur Datenverarbeitung widerrufen oder Widerspruch gegen die Verarbeitung eingelegt haben.
+              Eine Löschung kommt auch dann in Betracht, wenn eine anderweitige Rechtspflicht zur Löschung besteht. Das Recht auf
+              Löschung kann ausgeschlossen sein, wenn die Verarbeitung zur Ausübung des Rechts auf freie Meinungsäußerung und
+              Information, zur Erfüllung einer Rechtspflicht oder zur Erfüllung einer öffentlicher Aufgaben erforderlich ist. Das
+              Recht auf Löschung kann auch ausgeschlossen sein, wenn die Verarbeitung aus Gründen des Vorliegens eines
+              öffentlichen Interesses im Bereich der öffentlichen Gesundheit oder zu Archivzwecken, Forschungszwecken oder
+              statistischen Zwecken sowie zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist
+            </p>
+            <h4>Einwilligungswiderruf</h4>
+            <p>
+              Sie haben nach Art. 7 Abs. 3 Datenschutz-Grundverordnung das Recht, Ihre datenschutzrechtliche
+              Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der
+              aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt (Einwilligungswiderruf).
+            </p>
+            <h4>Recht auf Einschränkung der Verarbeitung</h4>
+            <p>
+              Sie können nach Art. 18 Datenschutz-Grundverordnung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
+              verlangen, wenn die Verarbeitung der von Ihnen mitgeteilten Daten nicht mehr erforderlich oder unrechtmäßig ist, Sie
+              die Richtigkeit der verarbeiteten Daten bestreiten oder Widerspruch gegen die Verarbeitung eingelegt haben oder die
+              Daten nicht mehr für die Antragsbearbeitung benötigt werden, Sie diese aber zur Verfolgung von Rechtsansprüchen
+              benötigen.
+            </p>
+            <h4>Recht auf Widerspruch gegen die Verarbeitung</h4>
+            <p>
+              Sie haben nach Art. 21 Datenschutz-Grundverordnung das Recht, aus Gründen, die sich aus ihrer besonderen Situation
+              ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten mit Wirkung für die Zukunft
+              Widerspruch einzulegen. Nach Ausübung Ihres Widerspruchsrechts werden Ihre personenbezogenen Daten nicht weiter
+              verarbeitet, es sei denn, dass zwingende schutzwürdige Gründe für die Verarbeitung vorliegen, die Ihre Interessen,
+              Rechte und Freiheiten überwiegen, oder wenn die Verarbeitung der Geltendmachung, Ausübung oder Verteidigung von
+              Rechtsansprüchen dient.
             </p>
 
+            <h3 id="headline_1_22">Recht auf Beschwerde bei einer Aufsichtbehörde</h3>
             <p>
-              Zur Wahrung aller in dieser Ziffer genannten Rechte kann sich jeder Betroffene an den/die Datenschutzbeauftragte/n
-              wenden.
-            </p>
-
-            <p>
-              Zudem können Sie sich - wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche
-              Vorschriften nicht beachtet werden - mit einer Beschwerde an die zuständige Aufsichtsbehörde wenden (Art. 77 DSGVO).
-              Betroffene können ihre Beschwerde an die Behörde ihres Wohnsitzes, grundsätzlich aber auch an jede andere
-              Datenschutzaufsichtsbehörde richten. Die zuständige Datenschutzaufsichtsbehörde ist die Berliner Beauftragte für
-              Datenschutz und Informationsfreiheit, die sie wie folgt kontaktieren können:
-            </p>
-
-            <p>
-              Berliner Beauftragte für Datenschutz und Informationsfreiheit<br />
+              Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über<br />
+              die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.<br />
+              Die<br />
+              zuständige Datenschutzbehörde ist die<br />
+              <strong>Berliner Beauftragte für Datenschutz und Informationsfreiheit</strong><br />
               Friedrichstr. 219<br />
               10969 Berlin<br />
-              Tel.: +49 30 13889-0<br />
-              E-Mail: mailbox@datenschutz-berlin.de
+              <a
+                href="https://www.datenschutz-berlin.de"
+                class=" extern"
+                target="_blank"
+                title="Verweis auf die Internetseite der Berliner Beauftragten für Datenschutz und Informationssicherheit (Öffnet in neuem Fenster)"
+                >www.datenschutz-berlin.de</a
+              >
             </p>
           </div>
         </div>
