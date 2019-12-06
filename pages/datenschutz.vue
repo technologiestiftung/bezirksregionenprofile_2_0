@@ -8,68 +8,71 @@
       <v-col cols="12" xl="8">
         <div>
           <h2>Datenschutzerklärung</h2>
+          <div>
+            <h3>Datenschutzhinweise</h3>
+            <p>
+              Im Folgenden informieren wir Sie über die Erhebung, Verarbeitung und Speicherung personenbezogener Daten im
+              Zusammenhang der Webseite https://www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile der
+              Koordinierungsstelle lokales Planen und Handeln (OE SPK) und Ihre damit verbundenen datenschutzrechtlichen Rechte.
+              Personenbezogene Daten sind alle Daten, die sich auf eine identifizierte oder identifizierbare natürliche Person
+              beziehen.
+            </p>
+          </div>
 
           <div>
-            <h3>I. Verantwortliche/r</h3>
+            <h3>Verantwortlicher und Datenschutzbeauftragter</h3>
+            <ol>
+              <li>
+                Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer datenschutzrechtlicher Bestimmungen ist
+                das Bezirksamt Tempelhof-Schöneberg von Berlin, John-F.-Kennedy-Platz, 10825 Berlin.
+              </li>
+              <li>
+                Der Datenschutzbeauftragte des verantwortlichen Bezirksamtes ist Herr Andreas F.-W. Mugler, Bezirksamt
+                Tempelhof-Schöneberg von Berlin, John-F.-Kennedy-Platz, 10825 Berlin, den Sie unter
+                <a href="mailto" title="Verweis auf E-Mail-Adresse des bezirklichen Datenschutzbeauftragte"
+                  >post.datenschutz@ba-ts.berlin.de</a
+                >: post.datenschutz@ba-ts.berlin.de erreichen.
+              </li>
+              <li>
+                Kontaktperson für die Arbeit der Koordinierungsstelle lokales Planen und Handeln (OE
+                <span class="caps">SPK</span>) ist Herr Eismann (Bezirkskoordination und Leitung), den Sie unter
+                <a href="mailto:jens-peter.eismann@ba-ts.berlin.de" title="Verweis auf E-Mail Adresse der Stellenleitung"
+                  >Jens-Peter.Eismann@ba-ts.berlin.de</a
+                >
+                erreichen.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>Zentrale Dienste des Webportals</h3>
             <p>
+              Betreibergesellschaft für die digitalen Bezirksregionenprofile des Bezirks Tempelhof-Schöneberg ist die
+              Technologiestiftung Berlin, Grunewaldstraße 61-62, 10825 Berlin.
+            </p>
+            <p>
+              Für den technischen Betrieb dieser Seite und alle damit einhergehenden Datenverarbeitungsvorgänge ist
               Verantwortliche/r im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze der
-              Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist:
+              Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen die:
             </p>
-            <dt>Bezirksamt Tempelhof-Schöneberg von Berlin</dt>
-            <p>John-F.-Kennedy-Platz, 10825 Berlin, <br />Tel: 90277-0</p>
-          </div>
 
-          <div>
-            <h3>II. Name und Anschrift des DSB (Datenschutzbeauftragten)</h3>
+            <p>Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin</p>
+
+            <p>Der Datenschutzbeauftragte der Technologiestiftung Berlin ist wie folgt erreichbar:</p>
+
+            <p>Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin</p>
             <p>
-              Der/die Datenschutzbeauftragte des Verantwortlichen ist:
+              Michael Scherer <br />Tel.: 030 20 96 99 951<br /><a
+                href="mailto:scherer@technologiestiftung-berlin.de"
+                title="Opens internal link in current window"
+                class="mail"
+                >scherer(at)technologiestiftung-berlin.de</a
+              >
             </p>
-            <dt>E-Mail:</dt>
-            <dd><a href="mailto:post.datenschutz@ba-ts.berlin.de">post.datenschutz@ba-ts.berlin.de</a></dd>
-            <dt>Anschrift:</dt>
-            <dd>
-              <div>
-                <p>
-                  Bezirksamt Tempelhof-Schöneberg<br />
-                  John-F.-Kennedy-Platz, 10825 Berlin
-                </p>
-              </div>
-            </dd>
-            <h4>Bezirksamt Tempelhof-Schöneberg von Berlin</h4>
-            <p>John-F.-Kennedy-Platz, 10825 Berlin, <br />Tel: 90277-0</p>
           </div>
-        </div>
 
-        <div>
-          <h3>III. Zentrale Dienste des Webportals</h3>
-          <p>
-            Betreibergesellschaft für die digitalen Bezirksregionenprofile des Bezirks Tempelhof-Schöneberg ist die
-            Technologiestiftung Berlin, Grunewaldstraße 61-62, 10825 Berlin.
-          </p>
-          <p>
-            Für den technischen Betrieb dieser Seite und alle damit einhergehenden Datenverarbeitungsvorgänge ist
-            Verantwortliche/r im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze der
-            Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen die:
-          </p>
-
-          <p>Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin</p>
-
-          <p>Der Datenschutzbeauftragte der Technologiestiftung Berlin ist wie folgt erreichbar:</p>
-
-          <p>Technologiestiftung Berlin<br />Grunewaldstraße 61-62<br />10825 Berlin</p>
-          <p>
-            Michael Scherer <br />Tel.: 030 20 96 99 951<br /><a
-              href="mailto:scherer@technologiestiftung-berlin.de"
-              title="Opens internal link in current window"
-              class="mail"
-              >scherer(at)technologiestiftung-berlin.de</a
-            >
-          </p>
-        </div>
-
-        <div>
-          <h3>IV. Rechte der betroffenen Person</h3>
           <div>
+            <h3>Rechte der betroffenen Person</h3>
             <p>Sie haben gegenüber der verantwortlichen Stelle das Recht:</p>
             <ol>
               <li>
@@ -95,7 +98,7 @@
 
             <p>
               Zur Wahrung aller in dieser Ziffer genannten Rechte kann sich jeder Betroffene an den/die Datenschutzbeauftragte/n
-              (siehe Ziffer II) wenden.
+              wenden.
             </p>
 
             <p>
