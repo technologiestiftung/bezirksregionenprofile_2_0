@@ -13,8 +13,8 @@
         <div class="map-dropdown-wrapper">
           <div class="map-dropdown">
             <v-menu v-model="menuOpen" offset-y>
-              <template v-slot:activator="{ on }">
-                <v-btn v-on="on" color="primary" dark>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn v-bind="attrs" color="primary" dark v-on="on">
                   {{ selectedName }}
                 </v-btn>
               </template>
