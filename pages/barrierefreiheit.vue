@@ -7,9 +7,9 @@
     <v-row>
       <v-col cols="12" xl="8">
         <div>
-          <h2>Barrierefreiheitserklärung</h2>
+          <h1>Barrierefreiheitserklärung</h1>
 
-          <h3 id="institution">Öffentliche Stelle / Geltungsbereich</h3>
+          <h2 id="institution">Öffentliche Stelle / Geltungsbereich</h2>
           <p>
             Beziksamt Tempelhof-Schöneberg
           </p>
@@ -23,31 +23,17 @@
             https://www.berlin.de/bezirksregionenprofile-ts/.
           </p>
 
-          <h3 id="create">Wann wurde die Erklärung zur Barrierefreiheit erstellt bzw. aktualisiert?</h3>
+          <h2 id="create">Wann wurde die Erklärung zur Barrierefreiheit erstellt bzw. aktualisiert?</h2>
           <p>
-            Diese Erklärung wurde am xx.12.2019 erstellt bzw. überarbeitet.
+            Diese Erklärung wurde am 9.12.2019 erstellt bzw. überarbeitet.
           </p>
           <p>
             Die Überprüfung der digitalen Barrierefreiheit wurde durchgeführt von der oben aufgeführten öffentlichen Stelle.
           </p>
 
-          <h3 id="accessibility">Wie barrierefrei ist das Angebot?</h3>
-          <p>
-            Dieser Webauftritt / Diese Anwendung ist nur teilweise barrierefrei. Es werden nur teilweise die Anforderungen der
-            aktuellen BITV erfüllt.
-          </p>
-
-          <h3 id="components">Welche Bereiche sind nicht barrierefrei?</h3>
-          <p>Die nachstehend aufgeführten Bereiche sind aus folgenden Gründen nicht barrierefrei:</p>
-
-          <h4>Unvereinbarkeit mit aktueller BITV</h4>
-          <p>Teilbereiche, die nicht barrierefrei sind:</p>
-
-          <p>TODO</p>
-
-          <h3 id="contactbfe">
+          <h2 id="contactbfe">
             Wen können Sie bei Anmerkungen oder Fragen zur digitalen Barrierefreiheit (Feedbackoption) kontaktieren?
-          </h3>
+          </h2>
           <p>Kontakt zur Ansprechperson der öffentlichen Stelle:</p>
           <p>
             Name: Ewelina Raab<br />
@@ -55,7 +41,7 @@
             Telefon: (030) 90277-2110
           </p>
 
-          <h3 id="contactbfelb">Kontakt zur Landesbeauftragten für digitale Barrierefreiheit</h3>
+          <h2 id="contactbfelb">Kontakt zur Landesbeauftragten für digitale Barrierefreiheit</h2>
           <p>
             Wenn Ihre Kontaktaufnahme mit der öffentlichen Stelle nicht erfolgreich war, können Sie sich an die Landesbeauftragte
             für digitale Barrierefreiheit wenden.<br />

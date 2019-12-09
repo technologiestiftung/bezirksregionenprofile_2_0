@@ -7,13 +7,13 @@
     <v-row>
       <v-col cols="12" xl="8">
         <div>
-          <h2>Impressum</h2>
+          <h1>Impressum</h1>
 
           <div>
             <div>
-              <h3>
+              <h2>
                 Redaktionelle Verantwortung
-              </h3>
+              </h2>
               <p>
                 Das Informationsangebot ist Teil des Stadtinformationssystems von Berlin.<br />
                 Die redaktionelle Verantwortung für den Internetauftritt unter
@@ -49,9 +49,9 @@
               </p>
 
               <div>
-                <h3>
+                <h2>
                   Behördlicher Datenschutzbeauftragter
-                </h3>
+                </h2>
                 <p>
                   Rathaus Schöneberg<br />
                   John-F.-Kennedy-Platz<br />
@@ -66,9 +66,9 @@
                 </p>
               </div>
 
-              <h3>
+              <h2>
                 Technischer Betrieb
-              </h3>
+              </h2>
               <p>
                 <a
                   href="https://www.technologiestiftung-berlin.de/"
@@ -85,19 +85,19 @@
                   >info@technologiestiftung-berlin.de</a
                 >
               </p>
-              <h3>
+              <h2>
                 Datenschutz
-              </h3>
+              </h2>
               <p>
                 Bitte beachten Sie hierzu die unsere
                 <a href="/datenschutz" title="Link zur Datenschutzerklärung">Datenschutzerklärung!</a>
               </p>
-              <h3>
+              <h2>
                 Haftungsausschluss
-              </h3>
-              <h4>
+              </h2>
+              <h3>
                 Haftung für Inhalte
-              </h4>
+              </h3>
               <p>
                 Die Inhalte der Internetseite werden mit größter Sorgfalt erstellt. Dennoch kann das Bezirksamt
                 Tempelhof-Schöneberg keine Gewähr für die Aktualität, Korrektheit und Vollständigkeit der bereitgestellten Inhalte
@@ -111,9 +111,9 @@
                 entsprechenden Inhalte umgehend entfernt. Eine diesbezügliche Haftung besteht allerdings erst ab dem Zeitpunkt der
                 Kenntnis konkreter Rechtsverletzungen.
               </p>
-              <h3>
+              <h2>
                 Urheberrecht
-              </h3>
+              </h2>
               <p>
                 Das Layout der Seiten des Bezirksamts Tempelhof-Schöneberg, die verwendeten Grafiken sowie die Sammlung der
                 Beiträge sind urheberrechtlich geschützt. Die Seiten dürfen ausschließlich zu privatem Gebrauch vervielfältigt

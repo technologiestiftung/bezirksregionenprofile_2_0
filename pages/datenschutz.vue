@@ -7,9 +7,9 @@
     <v-row>
       <v-col cols="12" xl="8">
         <div>
-          <h2>Datenschutzerklärung</h2>
+          <h1>Datenschutzerklärung</h1>
           <div>
-            <h3>Datenschutzhinweise</h3>
+            <h2>Datenschutzhinweise</h2>
             <p>
               Im Folgenden informieren wir Sie über die Erhebung, Verarbeitung und Speicherung personenbezogener Daten im
               Zusammenhang der Webseite https://www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile der
@@ -20,32 +20,33 @@
           </div>
 
           <div>
-            <h3>Verantwortlicher und Datenschutzbeauftragter</h3>
-            <ol>
-              <li>
-                Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer datenschutzrechtlicher Bestimmungen ist
-                das Bezirksamt Tempelhof-Schöneberg von Berlin, John-F.-Kennedy-Platz, 10825 Berlin.
-              </li>
-              <li>
-                Der Datenschutzbeauftragte des verantwortlichen Bezirksamtes ist Herr Andreas F.-W. Mugler, Bezirksamt
-                Tempelhof-Schöneberg von Berlin, John-F.-Kennedy-Platz, 10825 Berlin, den Sie unter
-                <a href="mailto" title="Verweis auf E-Mail-Adresse des bezirklichen Datenschutzbeauftragte"
-                  >post.datenschutz@ba-ts.berlin.de</a
-                >: post.datenschutz@ba-ts.berlin.de erreichen.
-              </li>
-              <li>
-                Kontaktperson für die Arbeit der Koordinierungsstelle lokales Planen und Handeln (OE
-                <span class="caps">SPK</span>) ist Herr Eismann (Bezirkskoordination und Leitung), den Sie unter
-                <a href="mailto:jens-peter.eismann@ba-ts.berlin.de" title="Verweis auf E-Mail Adresse der Stellenleitung"
-                  >Jens-Peter.Eismann@ba-ts.berlin.de</a
-                >
-                erreichen.
-              </li>
-            </ol>
+            <h2>Verantwortlicher und Datenschutzbeauftragter</h2>
+            <p>
+              Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer datenschutzrechtlicher Bestimmungen ist das
+              Bezirksamt Tempelhof-Schöneberg von Berlin, John-F.-Kennedy-Platz, 10825 Berlin.
+            </p>
+
+            <p>
+              Der Datenschutzbeauftragte des verantwortlichen Bezirksamtes ist:<br /><br />
+              Herr Andreas F.-W. Mugler, Bezirksamt<br />
+              Tempelhof-Schöneberg von Berlin, <br />John-F.-Kennedy-Platz<br />
+              10825 Berlin<br />
+              <a href="mailto" title="Verweis auf E-Mail-Adresse des bezirklichen Datenschutzbeauftragte"
+                >post.datenschutz@ba-ts.berlin.de</a
+              >: post.datenschutz@ba-ts.berlin.de
+            </p>
+            <p>
+              Kontaktperson für die Arbeit der Koordinierungsstelle lokales Planen und Handeln (OE
+              <span class="caps">SPK</span>) ist Herr Eismann (Bezirkskoordination und Leitung), den Sie unter
+              <a href="mailto:jens-peter.eismann@ba-ts.berlin.de" title="Verweis auf E-Mail Adresse der Stellenleitung"
+                >Jens-Peter.Eismann@ba-ts.berlin.de</a
+              >
+              erreichen.
+            </p>
           </div>
 
           <div>
-            <h3>Zentrale Dienste des Webportals</h3>
+            <h2>Zentrale Dienste des Webportals</h2>
             <p>
               Betreibergesellschaft für die digitalen Bezirksregionenprofile des Bezirks Tempelhof-Schöneberg ist die
               Technologiestiftung Berlin, Grunewaldstraße 61-62, 10825 Berlin.
@@ -69,25 +70,38 @@
                 >scherer(at)technologiestiftung-berlin.de</a
               >
             </p>
+
+            <h2>Weitere datenverarbeitende Prozesse</h2>
+            <p><strong>Mapbox</strong></p>
+            <p>
+              Diese Seite nutzt über eine API den Kartendienst Mapbox. Anbieter ist die MapBox Inc., 740 15th St NW, Washington,
+              DC 20005, USA. Zur Nutzung der Funktionen von Mapbox ist es notwendig, Ihre IP Adresse zu speichern. Diese
+              Informationen werden in der Regel an einen Server von Mapbox in den USA übertragen und dort gespeichert. Der
+              Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Die Nutzung von Mapbox Maps erfolgt im
+              Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns
+              auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO
+              dar. Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Mapbox:
+              https://www.mapbox.com/privacy/.
+            </p>
           </div>
 
           <div>
-            <h3>Ihre Rechte</h3>
+            <h2>Ihre Rechte</h2>
             <p>
               Sie haben folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:
             </p>
-            <h4>Recht auf Auskunft</h4>
+            <h3>Recht auf Auskunft</h3>
             <p>
               Sie können gemäß Art. 15 Datenschutz-Grundverordnung eine Bestätigung darüber verlangen, insbesondere ob und welche
               personenbezogene Daten, die Sie betreffen, von uns verarbeitet und an wen diese weiter gegeben werden
             </p>
-            <h4>Recht auf Berichtigung</h4>
+            <h3>Recht auf Berichtigung</h3>
             <p>
               Sie haben gemäß Art. 16 Datenschutz-Grundverordnung ein Recht auf Berichtigung und/oder Vervollständigung gegenüber
               dem Verantwortlichen, sofern die verarbeiteten personenbezogenen Daten, die Sie betreffen, unrichtig oder
               unvollständig sind.
             </p>
-            <h4>Recht auf Löschung</h4>
+            <h3>Recht auf Löschung</h3>
             <p>
               Sie haben gemäß Art. 17 Datenschutz-Grundverordnung das Recht, die Löschung der Sie betreffenden personenbezogenen
               Daten zu verlangen, wenn die Verarbeitung der von Ihnen mitgeteilten Daten nicht mehr erforderlich oder unrechtmäßig
@@ -99,13 +113,13 @@
               öffentlichen Interesses im Bereich der öffentlichen Gesundheit oder zu Archivzwecken, Forschungszwecken oder
               statistischen Zwecken sowie zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist
             </p>
-            <h4>Einwilligungswiderruf</h4>
+            <h3>Einwilligungswiderruf</h3>
             <p>
               Sie haben nach Art. 7 Abs. 3 Datenschutz-Grundverordnung das Recht, Ihre datenschutzrechtliche
               Einwilligungserklärung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der
               aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt (Einwilligungswiderruf).
             </p>
-            <h4>Recht auf Einschränkung der Verarbeitung</h4>
+            <h3>Recht auf Einschränkung der Verarbeitung</h3>
             <p>
               Sie können nach Art. 18 Datenschutz-Grundverordnung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten
               verlangen, wenn die Verarbeitung der von Ihnen mitgeteilten Daten nicht mehr erforderlich oder unrechtmäßig ist, Sie
@@ -113,7 +127,7 @@
               Daten nicht mehr für die Antragsbearbeitung benötigt werden, Sie diese aber zur Verfolgung von Rechtsansprüchen
               benötigen.
             </p>
-            <h4>Recht auf Widerspruch gegen die Verarbeitung</h4>
+            <h3>Recht auf Widerspruch gegen die Verarbeitung</h3>
             <p>
               Sie haben nach Art. 21 Datenschutz-Grundverordnung das Recht, aus Gründen, die sich aus ihrer besonderen Situation
               ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten mit Wirkung für die Zukunft
@@ -123,7 +137,7 @@
               Rechtsansprüchen dient.
             </p>
 
-            <h3 id="headline_1_22">Recht auf Beschwerde bei einer Aufsichtbehörde</h3>
+            <h2 id="headline_1_22">Recht auf Beschwerde bei einer Aufsichtbehörde</h2>
             <p>
               Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über<br />
               die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.<br />

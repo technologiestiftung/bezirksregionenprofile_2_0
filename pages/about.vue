@@ -8,7 +8,7 @@
       <v-col cols="12" xl="8">
         <div>
           <br />
-          <h2>Über das Projekt</h2>
+          <h1>Über das Projekt</h1>
           <p>
             Diese Webanwendung zu Bezirksregionenprofilen ist ein Projekt der
             <strong
