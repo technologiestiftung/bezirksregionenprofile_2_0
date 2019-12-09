@@ -14,11 +14,11 @@
           <div class="map-dropdown">
             <v-menu v-model="menuOpen" offset-y>
               <template v-slot:activator="{ on, attrs }">
-                <v-btn v-bind="attrs" color="primary" dark v-on="on">
+                <v-btn aria-controls="menu-dropdown" v-bind="attrs" color="primary" dark v-on="on">
                   {{ selectedName }}
                 </v-btn>
               </template>
-              <v-list :nav="true" dense min-width="300">
+              <v-list id="menu-dropdown" :nav="true" dense min-width="300">
                 <v-list-item @click="$store.commit('setCurrentBzr', null)">
                   <v-list-item-title>{{ currentBz.name }}</v-list-item-title>
                 </v-list-item>
