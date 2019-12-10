@@ -24,200 +24,29 @@ Adjust urls in packagejson
 
 ```npm run generate```
 
-## Content page data structure (BZR page)
+## Content page data structure
+
+The application is constructed to have an overview page of all pages and a subpage for each 'Bezirk'. As the first prototype is only made for 'Tempelhof-Schöneberg', there is a 'hack' to make Tempelhof-Schöneberg the starting page and exclude the view of the overview of all 'Bezirke'. For this 'hack' the *pages* folder was adapted.
+To go back to the view for all 'Bezirke' put the content of the *pages_full_site* in the *pages* folder.
+
+The 'Bezirk' page:
+
+![](./readme-screenshots/bezirk.png)
+
+The 'Bezirksregion' page:
+
+![](./readme-screenshots/bezirksregion.png)
+
+From each 'Bezirk' detail page (*pages/_bz*) detail pages for each 'Bezirksregion' can be accessed (*pages/_bz/_bzr*). The 'Bezirksregion' detail page contains the content of the 'Bezirksregionenprofil'. It contains a long content space which can be filled with different content elements.
+
 Available content elements: 
 * title - healine element
+* title-sm small title
 * text - text block
 * image - image with optional headline
-* barchart - barchart with optional headline
-* linechart - linechart with optional headline
-* map-pr - heatmap for all Planungsräume within the current Bezirksregion
-* map-poi - map with markers for current Bezirksregion
+* barchart - barchart with optional headline (*components/charts/chartBar.vue*)
+* linechart - linechart with optional headline (*components/charts/chartLine.vue*)
+* map-pr - heatmap for all Planungsräume within the current Bezirksregion(*components/maps/prMap.vue*)
+* map-poi - map with markers for current Bezirksregion (*components/maps/bzrMap.vue*)
 
-### Example dataset with all content elements
-```
-[
-    {
-        "ref": "1",
-        "type": "titel",
-        "content": "Headline Text"
-    },
-    {
-        "ref": "1",
-        "type": "text",
-        "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-    },
-    {
-        "ref": "1",
-        "type": "image",
-        "datasource": "https://image-url.jpg",
-        "content": "Image headline",
-        "source": "copyright information / credits",
-        "alt": "Alt text"
-    },
-    {
-        "ref": "2",
-        "type": "table",
-        "content": "Table headline",
-        "source": "copyright information / credits",
-        "alt": "Alt text for aria-label",
-        "data": [
-            {
-                "filedname1": "value_1_row_1",
-                "filedname2": "value_2_row_1",
-                "filedname3": "value_3_row_1"
-            },
-            {
-                "filedname1": "value_1_row_2",
-                "filedname2": "value_2_row_2",
-                "filedname3": "value_3_row_2"
-            }
-        ]
-    },
-    {
-        "ref": "2",
-        "type": "barchart",
-        "content": "Chart headline",
-        "source": "copyright information / credits",
-        "data": {
-            "labels": [
-                "2013",
-                "2014",
-                "2015",
-                "2016",
-                "2017"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        "23",
-                        "25",
-                        "37",
-                        "40",
-                        "35"
-                    ],
-                    "label": "Kita 1",
-                    "borderColor": "#1E3791",
-                    "backgroundColor": "#1E3791",
-                    "fill": false
-                },
-                {
-                    "data": [
-                        "13",
-                        "10",
-                        "12",
-                        "17",
-                        "15"
-                    ],
-                    "label": "Kita 2",
-                    "borderColor": "#04A6F0 ",
-                    "backgroundColor": "#04A6F0 ",
-                    "fill": false
-                }
-            ]
-        }
-    },
-    {
-        "ref": "2",
-        "type": "linechart",
-        "content": "Chart headline",
-        "source": "copyright information / credits",
-        "data": {
-            "labels": [
-                "2013",
-                "2014",
-                "2015",
-                "2016",
-                "2017"
-            ],
-            "datasets": [
-                {
-                    "data": [
-                        "23",
-                        "25",
-                        "37",
-                        "40",
-                        "35"
-                    ],
-                    "label": "Kita 1",
-                    "borderColor": "#1E3791",
-                    "backgroundColor": "#1E3791",
-                    "fill": false
-                },
-                {
-                    "data": [
-                        "13",
-                        "10",
-                        "12",
-                        "17",
-                        "15"
-                    ],
-                    "label": "Kita 2",
-                    "borderColor": "#04A6F0 ",
-                    "backgroundColor": "#04A6F0 ",
-                    "fill": false
-                }
-            ]
-        }
-    },
-    {
-        "ref": "3",
-        "type": "map-pr",
-        "content": "Map  headline",
-        "source": "copyright information / credits",
-        "alt": "Alt text for aria-label",
-        "data": [
-            {
-                "id": "7010101",
-                "wert": "11.4403",
-                "einheit": "GruSI SGB XII 65+ (%)",
-                "color": "#E60032"
-            },
-            {
-                "id": "7010102",
-                "wert": "21.0592",
-                "einheit": "",
-                "color": ""
-            },
-            {
-                "id": "7010103",
-                "wert": "8.7484",
-                "einheit": "",
-                "color": ""
-            },
-            {
-                "id": "7010104",
-                "wert": "26.9136",
-                "einheit": "",
-                "color": ""
-            }
-        ]
-    },
-    {
-        "ref": "2",
-        "type": "map-poi",
-        "source": "copyright information / credits",
-        "content": "Map headline",
-        "data": [
-            {
-                "lng": "13.396395",
-                "lat": "52.497542",
-                "text": "Spielplatz 1",
-                "color": "#1E3791"
-            },
-            {
-                "lng": "13.397543",
-                "lat": "52.494634",
-                "text": "Spielplatz 2",
-                "color": ""
-            },
-            {
-                "lng": "13.404399",
-                "lat": "52.495450",
-                "text": "Spielplatz 3",
-                "color": ""
-            }
-        ]
-    }
-]
-```
+For more information on the data input see the [GitHub Repository bezirksregionenprofile-daten](https://github.com/technologiestiftung/bezirksregionenprofile-daten).

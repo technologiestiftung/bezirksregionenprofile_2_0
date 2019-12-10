@@ -13,10 +13,12 @@
         <div class="map-dropdown-wrapper">
           <div class="map-dropdown">
             <v-menu v-model="menuOpen" offset-y>
-              <template v-slot:activator="{ on }">
-                <v-btn v-on="on" color="primary" dark> <v-icon class="mr-3">mdi-menu-down</v-icon>{{ selectedName }}</v-btn>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn aria-controls="menu-dropdown" v-bind="attrs" color="primary" dark v-on="on">
+                  <v-icon class="mr-3">mdi-menu-down</v-icon>{{ selectedName }}
+                </v-btn>
               </template>
-              <v-list :nav="true" dense min-width="300">
+              <v-list id="menu-dropdown" :nav="true" dense min-width="300">
                 <v-list-item @click="$store.commit('setCurrentBzr', null)">
                   <v-list-item-title>{{ currentBz.name }}</v-list-item-title>
                 </v-list-item>
