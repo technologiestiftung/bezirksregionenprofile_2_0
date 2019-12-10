@@ -226,26 +226,32 @@ export default {
   .indGr1 {
     color: $color-indGr1;
     border-bottom: 3px solid $color-indGr1;
+    filter: contrast(0.3);
   }
   .indGr2 {
     color: $color-indGr2;
     border-bottom: 3px solid $color-indGr2;
+    filter: contrast(0.3);
   }
   .indGr3 {
     color: $color-indGr3;
     border-bottom: 3px solid $color-indGr3;
+    filter: contrast(0.5);
   }
   .indGr4 {
     color: $color-indGr4;
     border-bottom: 3px solid $color-indGr4;
+    filter: contrast(0.3);
   }
   .indGr5 {
     color: $color-indGr5;
     border-bottom: 3px solid $color-indGr5;
+    filter: contrast(0.5);
   }
   .indGr6 {
     color: $color-indGr6;
     border-bottom: 3px solid $color-indGr6;
+    filter: contrast(0.3);
   }
 }
 </style>

@@ -15,7 +15,7 @@
             <v-menu v-model="menuOpen" offset-y>
               <template v-slot:activator="{ on }">
                 <v-btn color="primary" dark v-on="on">
-                  {{ selectedName }}
+                  <v-icon class="mr-3">mdi-menu-down</v-icon>{{ selectedName }}
                 </v-btn>
               </template>
               <v-list :nav="true" dense min-width="300">

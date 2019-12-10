@@ -225,21 +225,27 @@ svg {
 
 .indGr1 {
   fill: $color-indGr1;
+  filter: contrast(0.3);
 }
 .indGr2 {
   fill: $color-indGr2;
+  filter: contrast(0.3);
 }
 .indGr3 {
   fill: $color-indGr3;
+  filter: contrast(0.3);
 }
 .indGr4 {
   fill: $color-indGr4;
+  filter: contrast(0.3);
 }
 .indGr5 {
   fill: $color-indGr5;
+  filter: contrast(0.3);
 }
 .indGr6 {
   fill: $color-indGr6;
+  filter: contrast(0.3);
 }
 
 .compare-line {

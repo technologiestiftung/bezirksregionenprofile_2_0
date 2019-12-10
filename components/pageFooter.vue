@@ -6,17 +6,16 @@
           <div class="d-flex flex-column flex-lg-row">
             <ul class="pl-2 mt-7 mt-lg-0 ml-lg-12 mr-lg-12">
               <li>
-                <a target="_blank" href="https://www.berlin.de/ba-tempelhof-schoeneberg/allgemeine-infos/artikel.350989.php"
-                  >Impressum</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://www.berlin.de/ba-tempelhof-schoeneberg/datenschutzerklaerung.700798.php"
-                  >Datenschutz</a
-                >
-              </li>
-              <li>
                 <nuxt-link to="/about">Über das Projekt</nuxt-link>
+              </li>
+              <li>
+                <a target="_blank" href="/impressum">Impressum</a>
+              </li>
+              <li>
+                <a target="_blank" href="/datenschutz">Datenschutz</a>
+              </li>
+              <li>
+                <a target="_blank" href="/barrierefreiheit">Barrierefreiheitserklärung</a>
               </li>
             </ul>
           </div>

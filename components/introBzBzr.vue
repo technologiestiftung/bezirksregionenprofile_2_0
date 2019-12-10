@@ -5,7 +5,7 @@
         <v-card light class="mx-auto pa-3 pa-md-4">
           <v-card-title>
             <div class="d-flex justify-space-between w-100 align-center">
-              <h3 class="pt-2">Impressum</h3>
+              <h3 class="pt-2">Hinweise zum Datenprofil</h3>
               <v-btn @click="overlay = false" icon>
                 <v-icon size="3+40">mdi-close</v-icon>
               </v-btn>
@@ -21,7 +21,8 @@
     <v-row>
       <v-col cols="12" lg="9">
         <small>{{ type }}</small>
-        <h2>{{ data.name }}</h2>
+        <h1 v-if="type === 'Bezirk'">{{ 'Bezirksregionenprofile von ' + data.name }}</h1>
+        <h1 v-if="type === 'Bezirksregion'">{{ 'Bezirksregionenprofil: ' + data.name }}</h1>
         <div v-html="$md.render(data.introText)"></div>
       </v-col>
     </v-row>
@@ -48,7 +49,7 @@
         <div v-if="type === 'Bezirksregion'" class="d-flex justify-lg-end">
           <div class="intro-item pr-4 pr-md-5 pr-xl-12">
             <v-btn :disabled="imprintTxt == ''" @click="overlay = !overlay" outlined color="primary" class="ma-2"
-              >Impressum</v-btn
+              >Hinweise zum Datenprofil</v-btn
             >
           </div>
           <div class="intro-item">
