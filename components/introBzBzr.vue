@@ -21,7 +21,8 @@
     <v-row>
       <v-col cols="12" lg="9">
         <small>{{ type }}</small>
-        <h2>{{ data.name }}</h2>
+        <h1 v-if="type === 'Bezirk'">{{ 'Bezirksregionenprofile von ' + data.name }}</h1>
+        <h1 v-if="type === 'Bezirksregion'">{{ 'Bezirksregionenprofil: ' + data.name }}</h1>
         <div v-html="$md.render(data.introText)"></div>
       </v-col>
     </v-row>
