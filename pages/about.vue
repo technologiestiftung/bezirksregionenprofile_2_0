@@ -14,7 +14,7 @@
             <strong
               >Open Data Informationsstelle der
               <a href="https://www.technologiestiftung-berlin.de/">Technologiestiftung Berlin</a></strong
-            >, dass die Bezirksregioneprofile Berlins im Web abbildet und darüber hinaus in einer interaktiven Anwendung erlebbar
+            >, das die Bezirksregioneprofile Berlins im Web abbildet und darüber hinaus in einer interaktiven Anwendung erlebbar
             macht.
           </p>
           <p>
@@ -33,7 +33,7 @@
           <p>
             Im Sinne der Förderung von Open Data Projekten ist der
             <a href="https://github.com/technologiestiftung/bezirksregionenprofile_2_0"
-              >Source-Code der des Prototypen hier einsehbar</a
+              >Source-Code des Prototypen hier einsehbar</a
             >.
           </p>
           <h2>Was ist ein Bezirksregionenprofil?</h2>
