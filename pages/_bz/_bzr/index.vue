@@ -5,7 +5,7 @@
     <page-header></page-header>
 
     <div class="btn-container">
-      <v-btn :to="bzUrl" color="primary" nuxt> <v-icon class="mr-3">mdi-arrow-left</v-icon>Zurück zur Übersicht </v-btn>
+      <v-btn to="/" color="primary" nuxt> <v-icon class="mr-3">mdi-arrow-left</v-icon>Zurück zur Übersicht </v-btn>
     </div>
     <v-row>
       <v-col cols="12">
