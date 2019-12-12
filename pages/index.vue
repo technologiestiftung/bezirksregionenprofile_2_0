@@ -12,26 +12,12 @@
       <v-col cols="12" sm="12" md="5">
         <div class="map-dropdown-wrapper">
           <div class="map-dropdown">
-            <v-menu v-model="menuOpen" offset-y>
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn aria-controls="menu-dropdown" v-bind="attrs" color="primary" dark v-on="on">
-                  <v-icon class="mr-3">mdi-menu-down</v-icon>{{ selectedName }}
-                </v-btn>
-              </template>
-              <v-list id="menu-dropdown" :nav="true" dense min-width="300">
-                <v-list-item @click="$store.commit('setCurrentBzr', null)">
-                  <v-list-item-title>{{ currentBz.name }}</v-list-item-title>
-                </v-list-item>
-                <v-list-item
-                  v-for="(item, index) in bzrSorted"
-                  :key="index"
-                  @mouseover="hoverItem = item.name"
-                  @click="$store.commit('setCurrentBzr', currentBz.bzr[index])"
-                >
-                  <v-list-item-title>{{ item.name }}</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-menu>
+            <select @change="onChange($event)">
+              <option value="">Bezirk {{ currentBz.name }}</option>
+              <option v-for="(item, index) in bzrSorted" :key="index" :value="index">
+                {{ item.name }}
+              </option>
+            </select>
           </div>
         </div>
         <index-map :hover-item="hoverItem" map-type="bezirk"></index-map>
@@ -115,9 +101,23 @@ export default {
     this.$store.commit('setCurrentBzr', null) // reset bzr to null
   },
   methods: {
+    onChange(event) {
+      this.$store.commit('setCurrentBzr', this.currentBz.bzr[event.target.value])
+    },
     setBzr(e) {
       this.selected = this.currentBz.bzr[e]
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+select {
+  padding: 10px;
+  background-color: #253276;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+</style>
