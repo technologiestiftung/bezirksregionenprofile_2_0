@@ -4,18 +4,16 @@
       <v-col cols="12" lg="5">
         <h3>Themen & Daten</h3>
       </v-col>
-      <v-col cols="12" lg="7" class="d-flex justify-lg-end align-center bz-bzr-toggle">
-        <div v-if="currentBzr">
-          <b class="pr-3">Vergleichen mit: </b>
-          <v-btn-toggle v-model="compareSelected" color="primary">
-            <v-btn value="bezirk">
-              Bezirk
-            </v-btn>
-            <v-btn value="berlin">
-              Berlin
-            </v-btn>
-          </v-btn-toggle>
-        </div>
+      <v-col v-if="currentBzr" cols="12" lg="7" class="d-flex justify-lg-end align-center bz-bzr-toggle">
+        <b class="pr-3">Vergleichen mit: </b>
+        <v-btn-toggle v-model="compareSelected" color="primary">
+          <v-btn value="bezirk">
+            Bezirk
+          </v-btn>
+          <v-btn value="berlin">
+            Berlin
+          </v-btn>
+        </v-btn-toggle>
       </v-col>
     </v-row>
     <div class="datenprofile-container">
@@ -52,7 +50,7 @@
       <v-col v-for="(indikator, index) in indikatorenOverview[activeInd].indikatoren" :key="index" cols="12" class="viz pb-5">
         <div class="d-flex justify-space-between align-end pb-2">
           <div>
-            <h3 class="mb-0 pr-5">{{ indikator['text-sm'] }} (KID: {{ indikator['name'] }})</h3>
+            <h3 class="mb-2">{{ indikator['text-sm'] }} (KID: {{ indikator['name'] }})</h3>
             <div class="info-text">
               <b>{{ indDataParsed[indikator.name].val }} {{ indikator['unit'] }}</b>
             </div>
