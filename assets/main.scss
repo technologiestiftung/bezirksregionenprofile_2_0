@@ -118,15 +118,17 @@ h3{
     box-sizing: border-box !important;
 }
 
+.theme--light.v-application{
+    background: #fff !important;
+}
 
-  .container-wrapper{
-      width: 100%;
-      margin-bottom: 0px !important;
 
-      .container{
-          padding: 0;
-          width: 100%;
-          max-width: 61.25rem;
-          min-width: none;
-      }
-  }
+.container-wrapper{
+    margin-bottom: 0px !important;
+    .container{
+        padding: 0;
+        width: 100%;
+        max-width: 61.25rem;
+        min-width: none;
+    }
+}

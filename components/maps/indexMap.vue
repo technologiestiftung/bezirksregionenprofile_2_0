@@ -116,10 +116,7 @@ export default {
       // get the bounds of the geojson
       const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
       let selectedBbox = bbox(this.geojsonData)
-      this.bounds = selectedBbox = [
-        [selectedBbox[0], selectedBbox[1]],
-        [selectedBbox[2], selectedBbox[3]]
-      ]
+      this.bounds = selectedBbox = [[selectedBbox[0], selectedBbox[1]], [selectedBbox[2], selectedBbox[3]]]
 
       mapboxgl.accessToken = ''
       this.map = new mapboxgl.Map({

@@ -1,70 +1,210 @@
 <!doctype html>
-<html {{ HTML_ATTRS }} xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-<head {{ HEAD_ATTRS }}>
-    <meta charset="UTF-8" />   
-        <!-- 4 template-path: tmpl_default/header/head.php -->            <title>Berliner Bezirksregionenprofile</title>
-           
-            <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-bootstrap.css" />
-            <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-index.css" />
-            
-           
-            <link rel="stylesheet" type="text/css" href="/berlinde/css/vendor.css" />
-    <!-- IE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="/berlinde/js/bo-head.js"></script>
-    {{ HEAD }}
-</head>
-<body class="locale_de " {{ BODY_ATTRS }}>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
-    <div class="container-wrapper container-portal-header">
-        
-        <div class="container">
-            <div class="row" role="banner">
-                <div class="span12">
-                    <div class="html5-header portal-header hidden-phone">
-                        <div class="red-line"></div>
-                        <div class="html5-figure main-image">
-                            <a href="#" title="Link führt zur Startseite von Berlin.de">
-                                <img class="portal-logo" src="/berlinde/css/images/berlin_de.png" alt="Bild zeigt: Berlin.de Logo" title="Link führt zur Startseite von Berlin.de" />
-                            </a>
-                        </div>
-                        <p class="navSkip">Navigiere direkt zu:</p>
-                        <ul class="navSkip">
-                            <li><a href="#aural_institutionssuche">Suche</a></li>
-                            <li><a href="#aural_maincontent">Inhalt</a></li>
-                        </ul>
-                        <div class="html5-nav" aria-label="Globale Portal-Links" role="navigation">
-                            <p id="bo-portalnavilinkslabel" class="aural">Besuchen Sie auch unsere anderen Themen-Bereiche:</p>
-                            <ul class="portal-navi" id="bo-portalnavilinks" aria-labelledby="bo-portalnavilinkslabel">
-                                <li class="active"><a href="https://www.berlin.de/politik-verwaltung-buerger/">Politik, Verwaltung, Bürger</a></li>
-                                <li><a href="https://www.berlin.de/kultur-und-tickets/">Kultur & Ausgehen</a></li>
-                                <li><a href="https://www.berlin.de/tourismus/">Tourismus</a></li>
-                                <li><a href="https://www.berlin.de/wirtschaft/">Wirtschaft</a></li>
-                                <li><a href="https://www.berlin.de/special/">Themen</a></li>
-                                <li><a href="https://www.berlin.de/adressen/">Branchenbuch</a></li>
-                                <li><a href="https://www.berlin.de/stadtplan/">Stadtplan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <!-- 4 template-path: tmpl_default/navi/navi_mobil_header.inc.php -->
-        <!-- navi mobil header inc -->
-        <div class="sticky-header bde-gradient hidden-desktop hidden-tablet">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 4 template-path: tmpl_default/header/head.php -->
+  <title>Startseite - Berlin.de</title>
+
+  <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/berlinde/css/bde-index.css" />
+
+
+  <link rel="stylesheet" type="text/css" href="/berlinde/css/vendor.css" />
+  <!-- IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="/berlinde/js/bo-head.js"></script>
+
+  <!-- nur Mastertemplates: -->
+  <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+<body class="locale_de ">
+
+  <!-- 4 template-path: tmpl_default/header/header_portal.php -->
+  <!-- template start: header_portal -->
+  <div class="container-wrapper container-portal-header">
+
+    <div class="container">
+      <div class="row" role="banner">
+        <div class="span12">
+          <div class="html5-header portal-header hidden-phone">
             <div class="red-line"></div>
-            <div class="portal-logo">
-                <a title="Link führt zur Startseite von Berlin.de" href="https://www.berlin.de/">
-                    <img title="Link führt zur Startseite von Berlin.de" alt="Bild zeigt: Berlin.de Logo"
-                        src="/berlinde/css/images/berlin_de.png">
-                </a>
+            <div class="html5-figure main-image">
+              <a href="#" title="Link führt zur Startseite von Berlin.de">
+                <img class="portal-logo" src="/berlinde/css/images/berlin_de.png" alt="Bild zeigt: Berlin.de Logo"
+                  title="Link führt zur Startseite von Berlin.de" />
+
+              </a>
             </div>
+            <p class="navSkip">Navigiere direkt zu:</p>
+            <ul class="navSkip">
+              <li><a href="#aural_institutionssuche">Suche</a></li>
+              <li><a href="#aural_maincontent">Inhalt</a></li>
+            </ul>
+            <div class="html5-nav" aria-label="Globale Portal-Links" role="navigation">
+              <p id="bo-portalnavilinkslabel" class="aural">Besuchen Sie auch unsere anderen Themen-Bereiche:</p>
+              <ul class="portal-navi" id="bo-portalnavilinks" aria-labelledby="bo-portalnavilinkslabel">
+                <li class="active"><a href="https://www.berlin.de/politik-verwaltung-buerger/">Politik, Verwaltung,
+                    Bürger</a></li>
+                <li><a href="https://www.berlin.de/kultur-und-tickets/">Kultur & Ausgehen</a></li>
+                <li><a href="https://www.berlin.de/tourismus/">Tourismus</a></li>
+                <li><a href="https://www.berlin.de/wirtschaft/">Wirtschaft</a></li>
+                <li><a href="https://www.berlin.de/special/">Themen</a></li>
+                <li><a href="https://www.berlin.de/adressen/">Branchenbuch</a></li>
+                <li><a href="https://www.berlin.de/stadtplan/">Stadtplan</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- navi mobil header inc -->
-    <div>
-        {{ APP }}
+      </div>
     </div>
+  </div>
+  <!-- /template end: header_portal -->
+
+  <div class="container-wrapper container-content template-land_start">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="html5-header content-header" role="banner">
+            <div class="row">
+              <div class="span5">
+                <div class="html5-section section-logo without-logo">
+                  <div class="html5-section text">
+                    <a href="/template/master/v4/index.php"
+                      title="Link führt zur Startseite von 'Institution Titel der Institution'">
+                      <span class="institution">Berlin.de </span>
+                      <span class="title">Bezirksregionenprofile</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span7">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <span class="mobile-blue-line hidden-desktop hidden-tablet"></span>
+              <div class="content-navi-wrapper navbar hidden-phone">
+                <div class="html5-nav content-navi-top navbar-inner">
+
+                  <nav class="nav-collapse mainnav-collapse collapse" aria-label="Hauptnavigation">
+                    <!-- 3 template-path: tmpl_default/navi/navi_top_startseite.php -->
+                    <!-- template start: navi-top-start -->
+
+                    <ul class="nav level1">
+                      <li class="">
+                        Bezirksregionenprofile von Tempelhof-Schöneberg
+                      </li>
+                    </ul>
+
+                    <!-- /template end: navi-top-start -->
+                  </nav>
+
+                  <!-- 4 template-path: tmpl_default/header/beberlin.php -->
+                  <div class="beberlin">
+                    <img alt="Bild zeigt: Logo beBerlin" src="css/images/logo_beberlin_darkblue.png">
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {{ APP }}
+
+
+    </div>
+  </div>
+
+
+
+
+  <!-- 3 template-path: tmpl_default/navi/navi_mobil_startseite.php -->
+  <!-- template: navi-mobil -->
+
+  <nav class="navigation-mobile hidden-desktop hidden-tablet">
+
+    <p class="navSkip">Navigiere direkt zu:</p>
+    <ul class="navSkip">
+      <li><a href="#mobile-nav-toggle" tabindex="1" id="hiddenNavToggler">Navigation
+          <!-- append text per css here --></a></li>
+    </ul>
+
+    <!-- 4 template-path: tmpl_default/navi/navi_mobil_header.inc.php -->
+    <!-- navi mobil header inc -->
+    <div class="sticky-header bde-gradient hidden-desktop hidden-tablet">
+      <div class="red-line"></div>
+      <div class="portal-logo">
+        <a title="Link führt zur Startseite von Berlin.de" href="#">
+          <img title="Link führt zur Startseite von Berlin.de" alt="Bild zeigt: Berlin.de Logo"
+            src="css/images/berlin_de.png">
+        </a>
+      </div>
+    </div>
+    <!-- navi mobil header inc -->
+
+    <div class="wrapper">
+
+      <!-- Sticky inner Head (sticky, if menu open) -->
+      <div class="sticky-container-head">
+        <div class="offcanvas-search">
+          <form action="#" method="get">
+            <div class="control-group searchform mobile">
+              <input type="search" name="q" placeholder="Geben Sie ein Stichwort ein">
+              <button type="submit" class="btn global-search-submit"><i class="icon-search icon-white"></i><span
+                  class="hidden-phone ">Suchen</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Nav Container (scrollable) -->
+
+      <div class="nav-container">
+        <div class="nav-container-body">
+          <!-- NAVIGATION -->
+
+          <ul class="nav-menu menu">
+            <li class="menu-item has-dropdown is-active">
+              <a href="#" class="menu-link">Institutionsname Start</a>
+
+              <ul class="nav-dropdown menu is-visible">
+                <li class="menu-item"> <a href="#" class="menu-link">Institutionsname: Startseite</a> </li>
+                <li class="menu-item"> <a href="#" class="menu-link">Haupt 1</a> </li>
+                <li class="menu-item"> <a href="#" class="menu-link">Haupt 2</a> </li>
+                <li class="menu-item"> <a href="#" class="menu-link">Haupt 3</a> </li>
+                <li class="menu-item"> <a href="#" class="menu-link">Haupt 4</a> </li>
+                <li class="menu-item"> <a href="#" class="menu-link">Haupt 5</a> </li>
+              </ul>
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- /template end: navi-mobil -->
+
+  <!-- /template end: footer-portal -->
+
+
+
+
+  <!-- 4 template-path: tmpl_default/footer/feedbackform.php -->
+  <!-- 4 template-path: tmpl_default/footer/skyscraper.php -->
+
+  <script type="text/javascript" src="js/bo-foot.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-content class="pa-0">
-      <v-container fluid class="px-sm-5 px-md-8 px-lg-12 py-5">
+      <v-container fluid style="padding-left: 20px; padding-right:20px;">
         <nuxt />
       </v-container>
     </v-content>

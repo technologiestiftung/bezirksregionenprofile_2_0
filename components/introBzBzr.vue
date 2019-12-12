@@ -6,7 +6,7 @@
           <v-card-title>
             <div class="d-flex justify-space-between w-100 align-center">
               <h3 class="pt-2">Hinweise zum Datenprofil</h3>
-              <v-btn @click="overlay = false" icon>
+              <v-btn icon @click="overlay = false">
                 <v-icon size="3+40">mdi-close</v-icon>
               </v-btn>
             </div>
@@ -48,7 +48,7 @@
       <v-col cols="12" md="12" lg="">
         <div v-if="type === 'Bezirksregion'" class="d-flex justify-lg-end">
           <div class="intro-item pr-4 pr-md-5 pr-xl-12">
-            <v-btn :disabled="imprintTxt == ''" @click="overlay = !overlay" outlined color="primary" class="ma-2"
+            <v-btn :disabled="imprintTxt == ''" outlined color="primary" class="ma-2" @click="overlay = !overlay"
               >Hinweise zum Datenprofil</v-btn
             >
           </div>

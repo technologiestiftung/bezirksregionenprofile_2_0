@@ -35,7 +35,7 @@
             </v-list-item-group>
           </v-list>
           <div class=" d-none d-md-flex justify-center mt-10">
-            <v-btn @click="$vuetify.goTo(0)" depressed class="mx-2" x-large fab color="primary">
+            <v-btn depressed class="mx-2" x-large fab color="primary" @click="$vuetify.goTo(0)">
               <v-icon size="26">mdi-arrow-up</v-icon>
             </v-btn>
           </div>
