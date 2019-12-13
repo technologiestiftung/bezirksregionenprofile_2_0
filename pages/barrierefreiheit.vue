@@ -1,6 +1,7 @@
 <template>
   <div>
-    <v-breadcrumbs :items="breadcrumbItems" class="mb-8" large></v-breadcrumbs>
+    <!-- breadcrumbs only necessary for the app with whole Berlin. Not with single 'Bezirke' -->
+    <!--<v-breadcrumbs :items="breadcrumbItems" class="mb-8" large></v-breadcrumbs>-->
 
     <page-header></page-header>
 
