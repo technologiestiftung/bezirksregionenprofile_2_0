@@ -83,7 +83,10 @@ export default {
       // get the bounds of the geojson
       const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
       let selectedBbox = bbox(this.geoJsonBzr)
-      this.bounds = selectedBbox = [[selectedBbox[0], selectedBbox[1]], [selectedBbox[2], selectedBbox[3]]]
+      this.bounds = selectedBbox = [
+        [selectedBbox[0], selectedBbox[1]],
+        [selectedBbox[2], selectedBbox[3]]
+      ]
 
       const mapColor = this.data[0].color
       const mapUnit = this.data[0].einheit
