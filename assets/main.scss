@@ -1,22 +1,29 @@
 
-h1, h2{
-    font-weight: 300;
-}
-
-h2, h3, h4{
-    margin-bottom: 5px;
+h1, h2, h3{
+    font-weight: 700;
 }
 
 h1{
-    font-size: 28px;
+    font-size:1.313rem;
+    margin-top:0;
+    margin-bottom:.619em;
+    line-height:1.381em;
 }
 
 h2{
-    font-size: 32px;
+    font-size:1rem;
+    margin-top:1em;
+    margin-bottom:.45em;
+    line-height:1.438em;
 }
 
 h3{
     font-size: 20px;
+    font-size:.875rem;
+    margin-top:1.5em;
+    margin-bottom:.45em;
+    line-height:1.5em;
+    color:#000;
 }
     
 
