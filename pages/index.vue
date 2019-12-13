@@ -119,5 +119,6 @@ select {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-appearance: menulist;
 }
 </style>
