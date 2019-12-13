@@ -57,11 +57,9 @@
           </div>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
-              <v-btn v-on="on" aria-label="Weitere Informationen zu Diagramm" color="primary" text icon
-                ><v-icon>mdi-information</v-icon></v-btn
-              >
+              <v-btn v-on="on" aria-labelledby="tooltip-text" color="primary" text icon><v-icon>mdi-information</v-icon></v-btn>
             </template>
-            <span class="tooltip-text"
+            <span id="tooltip-text" class="tooltip-text"
               >{{ indikator['text-lg'] + ': ' }}
               <b>{{ indDataParsed[indikator.name].val }}</b>
               {{ indikator['unit'] }}
@@ -112,7 +110,7 @@
             <p>
               <v-btn class="mt-1" tile color="primary" small to="/about#indikators">
                 <v-icon left>mdi-arrow-right</v-icon>
-                Beschreibung der einzelnen Kernindikatoren
+                Weitere Informationen
               </v-btn>
             </p>
           </v-card-text>
