@@ -9,10 +9,7 @@
                 <div class="span5">
                   <div class="html5-section section-logo without-logo">
                     <div class="html5-section text">
-                      <a
-                        href="/template/master/v4/index.php"
-                        title="Link führt zur Startseite von 'Institution Titel der Institution'"
-                      >
+                      <a href="/" title="Link führt zur Startseite von 'Bezirksregionenprofile von Tempelhof Schöneberg'">
                         <span class="title">Bezirksregionenprofile</span>
                       </a>
                     </div>
