@@ -11,9 +11,7 @@
           <h1>Barrierefreiheitserklärung</h1>
 
           <h2 id="institution">Öffentliche Stelle / Geltungsbereich</h2>
-          <p>
-            Beziksamt Tempelhof-Schöneberg
-          </p>
+          <p>Beziksamt Tempelhof-Schöneberg</p>
           <p>
             Wir bemühen uns, unseren Webauftritt barrierefrei zu gestalten. Die Erklärung zur digitalen Barrierefreiheit wird im
             Gesetz über die barrierefreie Informations- und Kommunikationstechnik Berlin (BIKTG Bln) verlangt. Die technischen
@@ -21,36 +19,39 @@
           </p>
           <p>
             Diese Erklärung zur digitalen Barrierefreiheit gilt für das Angebot Webauftritt
-            https://www.berlin.de/bezirksregionenprofile-ts/.
+            www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile.
           </p>
 
           <h2 id="create">Wann wurde die Erklärung zur Barrierefreiheit erstellt bzw. aktualisiert?</h2>
-          <p>
-            Diese Erklärung wurde am 9.12.2019 erstellt bzw. überarbeitet.
-          </p>
-          <p>
-            Die Überprüfung der digitalen Barrierefreiheit wurde durchgeführt von der oben aufgeführten öffentlichen Stelle.
-          </p>
+          <p>Diese Erklärung wurde am 9.12.2019 erstellt bzw. überarbeitet.</p>
+          <p>Die Überprüfung der digitalen Barrierefreiheit wurde durchgeführt von der oben aufgeführten öffentlichen Stelle.</p>
 
+          <h2 id="accessibility">Wie barrierefrei ist das Angebot?</h2>
+          <p>
+            Dieser Webauftritt / Diese Anwendung ist barrierefrei.
+          </p>
           <h2 id="contactbfe">
             Wen können Sie bei Anmerkungen oder Fragen zur digitalen Barrierefreiheit (Feedbackoption) kontaktieren?
           </h2>
           <p>Kontakt zur Ansprechperson der öffentlichen Stelle:</p>
           <p>
-            Name: Ewelina Raab<br />
-            E-Mail: <a href="mailto:digitale_barrierefreiheit@ba-ts.berlin.de">digitale_barrierefreiheit@ba-ts.berlin.de</a><br />
-            Telefon: (030) 90277-2110
+            Name: Ewelina Raab
+            <br />E-Mail:
+            <a href="mailto:digitale_barrierefreiheit@ba-ts.berlin.de">digitale_barrierefreiheit@ba-ts.berlin.de</a>
+            <br />Telefon: (030) 90277-2110
           </p>
 
           <h2 id="contactbfelb">Kontakt zur Landesbeauftragten für digitale Barrierefreiheit</h2>
           <p>
             Wenn Ihre Kontaktaufnahme mit der öffentlichen Stelle nicht erfolgreich war, können Sie sich an die Landesbeauftragte
-            für digitale Barrierefreiheit wenden.<br />
+            für digitale Barrierefreiheit wenden.
+            <br />
             <a
               target="_blank"
               href="https://www.berlin.de/sen/inneres/moderne-verwaltung/digitale-barrierefreiheit/landesbeauftragte/formular.804443.php"
               >Link zum Kontaktformular</a
-            ><br />
+            >
+            <br />
             <a
               target="_blank"
               href="https://www.berlin.de/sen/inneres/moderne-verwaltung/digitale-barrierefreiheit/landesbeauftragte/"

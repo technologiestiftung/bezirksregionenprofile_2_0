@@ -20,7 +20,7 @@
                 Die redaktionelle Verantwortung für den Internetauftritt unter
               </p>
               <p>
-                www.berlin.de/bezirksregionenprofile-ts
+                www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile.
               </p>
               <p>
                 liegt beim Bezirksamt Tempelhof-Schöneberg von Berlin, Organisationseinheit Sozialraumorientierte

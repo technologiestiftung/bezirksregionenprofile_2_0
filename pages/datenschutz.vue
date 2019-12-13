@@ -13,10 +13,9 @@
             <h2>Datenschutzhinweise</h2>
             <p>
               Im Folgenden informieren wir Sie über die Erhebung, Verarbeitung und Speicherung personenbezogener Daten im
-              Zusammenhang der Webseite https://www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile der
-              Koordinierungsstelle lokales Planen und Handeln (OE SPK) und Ihre damit verbundenen datenschutzrechtlichen Rechte.
-              Personenbezogene Daten sind alle Daten, die sich auf eine identifizierte oder identifizierbare natürliche Person
-              beziehen.
+              Zusammenhang der Webseite www.berlin.de/ba-tempelhof-schoeneberg/bezirksregionenprofile der Koordinierungsstelle
+              lokales Planen und Handeln (OE SPK) und Ihre damit verbundenen datenschutzrechtlichen Rechte. Personenbezogene Daten
+              sind alle Daten, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
             </p>
           </div>
 
