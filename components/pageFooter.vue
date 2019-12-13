@@ -9,7 +9,7 @@
             <li><nuxt-link class="ic-fa-impressum" to="/impressum">Impressum</nuxt-link></li>
             <li><nuxt-link class="ic-fa-info" to="/about">Über das Projekt</nuxt-link></li>
             <li><nuxt-link class="ic-fa-lock" to="/datenschutz">Datenschutzerklärung</nuxt-link></li>
-            <li><nuxt-link class="ic-fa-info" to="/barrierefreiheit">Barrierefreiheitserklärung</nuxt-link></li>
+            <li><nuxt-link class="ic-fa-access" to="/barrierefreiheit">Digitale Barrierefreiheit</nuxt-link></li>
             <li class="right"><a class="ic-fa-totop" href="#">zum Seitenanfang</a></li>
           </ul>
         </div>
