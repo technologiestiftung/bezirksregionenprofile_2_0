@@ -13,8 +13,8 @@
         <div class="map-dropdown-wrapper">
           <div class="map-dropdown">
             <select @change="onChange($event)">
-              <option value="">Bezirk {{ currentBz.name }}</option>
-              <option v-for="(item, index) in bzrSorted" :key="index" :value="index">
+              <option value="" :selected="isSelected(0)">Bezirk {{ currentBz.name }}</option>
+              <option v-for="(item, index) in bzrSorted" :key="index" :value="index" :selected="isSelected(index)">
                 {{ item.name }}
               </option>
             </select>
@@ -103,6 +103,19 @@ export default {
   methods: {
     onChange(event) {
       this.$store.commit('setCurrentBzr', this.currentBz.bzr[event.target.value])
+    },
+    isSelected(item) {
+      if (!this.currentBzr) {
+        if (item === 0) {
+          return true
+        } else {
+          return false
+        }
+      } else if (this.currentBzr.url === item) {
+        return true
+      } else {
+        return false
+      }
     },
     setBzr(e) {
       this.selected = this.currentBz.bzr[e]
