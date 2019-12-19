@@ -13,7 +13,7 @@
         <div class="map-dropdown-wrapper">
           <div class="map-dropdown">
             <select @change="onChange($event)">
-              <option value="" :selected="isSelected(0)">Bezirk {{ currentBz.name }}</option>
+              <option :selected="isSelected(0)" value="">Bezirk {{ currentBz.name }}</option>
               <option v-for="(item, index) in bzrSorted" :key="index" :value="index" :selected="isSelected(index)">
                 {{ item.name }}
               </option>
@@ -124,7 +124,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 select {
   padding: 10px;
   background-color: #253276;
