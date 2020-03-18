@@ -28,7 +28,23 @@
 
           <h2 id="accessibility">Wie barrierefrei ist das Angebot?</h2>
           <p>
-            Dieser Webauftritt / Diese Anwendung ist barrierefrei.
+            Dieser Webauftritt / Diese Anwendung ist nur teilweise barrierefrei. Es werden nur teilweise die Anforderungen der
+            aktuellen BITV erfüllt.
+          </p>
+          <h2 id="accessibilityexplanation">Welche Bereiche sind nicht barrierefrei?</h2>
+          <p>
+            Teilbereiche, die nicht barrierefrei sind:
+          </p>
+          <p>
+            <b>Barriere: Navigationsmenü für die Kartendarstellung</b>
+            <br />
+            <u>Beschreibung:</u> Das Drop-down-Menü für die Bezirkskarte ist eventuell nicht vollständig nutzbar für
+            Vorlesesoftware.
+            <br />
+            <u>Maßnahmen:</u> Weitere Prüfungen der Nutzbarkeit des Menüs für Vorlesesoftware und ggf. eine Anpassung oder
+            Neuentwicklung der Kartenavigation.
+            <br />
+            <u>Zeitplan:</u> Behebung bis Ende 2020
           </p>
           <h2 id="contactbfe">
             Wen können Sie bei Anmerkungen oder Fragen zur digitalen Barrierefreiheit (Feedbackoption) kontaktieren?
