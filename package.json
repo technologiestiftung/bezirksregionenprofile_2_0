@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "generate:withenvs": "BASE_URL=https://bezirksregionenprofile-ts.netlify.com API_URL=https://bezirksregionenprofile-data-dev.s3.eu-central-1.amazonaws.com/data nuxt generate",
+    "generate:withenvs": "BASE_URL=https://bezirksregionenprofile-ts.netlify.app API_URL=https://bezirksregionenprofile-data-dev.s3.eu-central-1.amazonaws.com/data nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
