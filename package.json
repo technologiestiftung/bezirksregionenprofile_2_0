@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "5.8.0",
-    "@nuxtjs/markdownit": "1.2.7",
+    "@nuxtjs/markdownit": "1.2.10",
     "@turf/bbox": "6.0.1",
     "chart.js": "2.9.3",
     "d3": "5.14.2",
