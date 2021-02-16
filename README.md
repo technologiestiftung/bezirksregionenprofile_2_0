@@ -22,7 +22,7 @@ to auto fix prettier format problems
 ## Build
 Adjust urls in packagejson
 
-```npm run bild```
+```npm run build```
 
 ## Content page data structure
 
