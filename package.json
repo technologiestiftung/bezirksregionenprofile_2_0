@@ -14,15 +14,15 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nuxtjs/axios": "5.8.0",
-    "@nuxtjs/markdownit": "1.2.7",
-    "@turf/bbox": "6.0.1",
-    "chart.js": "2.9.3",
-    "d3": "5.14.2",
-    "mapbox-gl": "1.5.1",
-    "nuxt": "2.10.2",
-    "papaparse": "5.2.0",
-    "vue-chartjs": "3.5.0"
+    "@nuxtjs/axios": "5.13.1",
+    "@nuxtjs/markdownit": "1.2.10",
+    "@turf/bbox": "6.3.0",
+    "chart.js": "2.9.4",
+    "d3": "5.16.0",
+    "mapbox-gl": "1.13.0",
+    "nuxt": "2.15.0",
+    "papaparse": "5.3.0",
+    "vue-chartjs": "3.5.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "1.1.2",
