@@ -1,0 +1,11 @@
+previewsEnabled: true
+previewsExpireAfterDays: 3
+services:
+  - type: web
+    name: BZRP - Deploy on render
+    env: static
+    staticPublishPath: ./static
+    plan: starter
+    pullRequestPreviewsEnabled: true # optional
+    previewPlan: starter
+    buildCommand: npm run build
