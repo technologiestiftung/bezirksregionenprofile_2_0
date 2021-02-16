@@ -65,7 +65,7 @@ export default {
     },
     ariaLabel() {
       return this.currentBz
-        ? `Übersichtskarte des Bezriks ${this.currentBz.name} mit allen Bezirksregionen`
+        ? `Übersichtskarte des Bezirks ${this.currentBz.name} mit allen Bezirksregionen`
         : 'Übersichtskarte Berlin mit allen Bezirken'
     }
   },
@@ -197,6 +197,19 @@ export default {
         anchor: 'bottom-left'
       })
 
+      const bezirkeBlacklist = [
+        'Neukölln',
+        'Spandau',
+        'Friedrichshain-Kreuzberg',
+        'Pankow',
+        'Treptow-Köpenick',
+        'Steglitz-Zehlendorf',
+        'Reinickendorf',
+        'Mitte',
+        'Charlottenburg-Wilmersdorf',
+        'Lichtenberg'
+      ]
+
       this.map.on('mousemove', 'fill-light', (e) => {
         // Change the cursor style as a UI indicator.
         this.map.getCanvas().style.cursor = 'pointer'
@@ -217,7 +230,12 @@ export default {
       })
 
       this.map.on('mousemove', 'fill-light', (e) => {
-        this.map.setFilter('fill-hover', ['==', this.featureName, e.features[0].properties[this.featureName]])
+        if (!bezirkeBlacklist.includes(e.features[0].properties[this.featureName])) {
+          this.map.setFilter('fill-hover', ['==', this.featureName, e.features[0].properties[this.featureName]])
+        } else {
+          this.map.setFilter('fill-hover', ['==', this.featureName, ''])
+          this.selected = null
+        }
       })
 
       // Reset the state-fills-hover layer's filter when the mouse leaves the layer.
@@ -228,10 +246,12 @@ export default {
 
       this.map.on('click', 'fill-light', (e) => {
         this.selected = toUrl(e.features[0].properties[this.featureName])
-        if (this.mapType === 'bezirke') {
-          this.$router.push({ path: this.selectedUrl })
-        } else {
-          this.$store.commit('setCurrentBzr', this.currentBz.bzr[this.selected])
+        if (!bezirkeBlacklist.includes(e.features[0].properties[this.featureName])) {
+          if (this.mapType === 'bezirke') {
+            this.$router.push({ path: this.selectedUrl })
+          } else {
+            this.$store.commit('setCurrentBzr', this.currentBz.bzr[this.selected])
+          }
         }
       })
 
