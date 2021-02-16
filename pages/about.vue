@@ -19,9 +19,6 @@
             macht.
           </p>
           <p>
-            Tempelhof-Schöneberg hat als erster Bezirk die Daten aufbereitet und über diese Webanwendung bereitgestellt.
-          </p>
-          <p>
             Dabei erweist sich dieses digitale Bezirksregionenprofil in zweierlei Hinsicht als nützliches Tool: sowohl für die
             Berliner Verwaltung und deren Datenkoordinator*innen, die die Profile erstellen, als auch für die Bürgerinnen und
             Bürger Berlins, die einen Einblick in die Sozialraumplanung und -entwicklung Berlins erhalten. Die 138 Bezirksregion
@@ -50,15 +47,10 @@
             der Bezirksregion und die verschiedenen stadtentwicklungspolitischen Bereiche werfen. Das betrifft neben den sozialen
             auch die baulichen, wirtschaftlichen und infrastrukturellen Komponenten.
           </p>
-          <p>
-            <a
-              href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/bzrp-677061.php"
-              >Mehr Informationen zu Bezirksregionenprofilen</a
-            >
-          </p>
+          <p></p>
           <p>
             <a href="https://www.stadtentwicklung.berlin.de/soziale_stadt/sozialraumorientierung"
-              >Mehr Informationen zur Sozialraumentwicklung</a
+              >Mehr Informationen zur Sozialraumorientierung</a
             >
           </p>
 
@@ -93,17 +85,27 @@
           </ol>
 
           <p>
-            Die Inhalte stammen aus den, durch die Bezirksämter veröffentlichten, Bezirksregionenprofilen.
-            <br />
-            <a
-              href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/bzrp-677061.php"
-              >Hier können die Bezirksregionenprofile von Tempelhof-Schöneberg heruntergeladen werden.</a
-            >
+            Die Inhalte stammen aus den, durch die Bezirksämter veröffentlichten, Bezirksregionenprofilen. Hier können die
+            Bezirksregionenprofile als Berichte im PDF-Format heruntergeladen werden:
           </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/bzrp-677061.php"
+                >Bezirksregionenprofile Tempelhof-Schöneberg
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/sozialraumorientierte-planungskoordination/artikel.842523.php"
+                >Bezirksregionenprofile Marzahn-Hellersdorf
+              </a>
+            </li>
+          </ul>
 
           <h2 id="indikators">Was sind Kernindikatoren?</h2>
           <p>
-            Die Kernindikatoren sind ein berlinweit abgestimmtes Indikatorenset, mit dem im Rahmen der integrierten
+            Die Kernindikatoren (KID) sind ein berlinweit abgestimmtes Indikatorenset, mit dem im Rahmen der integrierten
             Stadtteilentwicklung die Vergleichbarkeit der Ist-Situation und der Entwicklung in den Bezirksregionen bezirksintern
             und bezirksübergreifend gewährleistet werden soll. Die Kernindikatoren bilden dabei sozialräumliche Daten zur
             demografischen Struktur einer Bezirksregion ab und untersuchen u.a. Merkmale zu Armutsrisiken, Entwicklungsbedingungen
@@ -111,8 +113,8 @@
             gibt es 23 Kernindikatoren, die 6 Rubriken zugeordnet werden können. Diese Webanwendung bildet wiederum 22
             Kernindikatoren (E4 wird nicht erfasst) aus 5 Rubriken ab.
           </p>
-          <!-- 
-          <v-expansion-panels accordion>
+
+          <!-- <v-expansion-panels accordion>
             <v-expansion-panel>
               <v-expansion-panel-header>Wohnen</v-expansion-panel-header>
               <v-expansion-panel-content>
@@ -175,13 +177,9 @@
 
               <v-expansion-panel-content>
                 <p>Die Rubrik Demografie beschreibt die demografische Struktur der Wohnbevölkerung.</p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
               </v-expansion-panel-content>
             </v-expansion-panel>
-          </v-expansion-panels>
- -->
+          </v-expansion-panels> -->
         </div>
       </v-col>
     </v-row>
