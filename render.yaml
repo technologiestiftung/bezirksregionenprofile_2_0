@@ -4,7 +4,7 @@ services:
   - type: web
     name: BZRP - Deploy on render
     env: static
-    staticPublishPath: ./static
+    staticPublishPath: ./
     plan: starter
     pullRequestPreviewsEnabled: true # optional
     previewPlan: starter
