@@ -10,6 +10,7 @@
               <template v-slot:activator="{ on }">
                 <v-btn v-on="on" color="primary" dark>
                   Bezirk auswählen
+                  <div class="arrow"></div>
                 </v-btn>
               </template>
               <v-list :nav="true" dense min-width="300">
@@ -32,14 +33,15 @@
           <div class="intro-text">
             <h2>Wie geht es den Berliner Bezirken?</h2>
             <p>
-              In welchem Kiez gibt es viele Spielplätze? Wo ziehen überdurchschnittlich viele Berliner*innen hin? Der Ist-Zustand
-              der Berliner Bezirke - und der kleingliedrigeren Bezirksregionen - wird in sogenannten Bezirks(regionen)profilen
+              In welchem Kiez gibt es viele Spielplätze? Wo ziehen überdurchschnittlich viele Berliner:innen hin? Der Ist-Zustand
+              der Berliner Bezirke und der kleineren Bezirksregionen wird in sogenannten Bezirksregionenprofilen (kurz: BZRP)
               festegehalten. Anhand von Kernindikatoren zu den Themen "Wohnen", "Demographie", "Dynamik", "Arbeitsmarkt" und
               "Kinder und Jungend" wird eine vergleichbare Datengrundlage zu sozialraumorientierten Themen geschaffen. In dieser
               Anwendung werden diese Kernindikatoren interaktiv aufbereitet und - soweit vorliegend - die ausführlichen Berichte
-              der Bezirke bereitgestellt. Klicke auf einen Bezirk, über den Du mehr erfahren möchtest.
+              der Bezirke bereitgestellt. <br /><br />
+              &#9432; <i>Klicke auf den Bezirk, über den Du mehr erfahren möchtest.</i>
             </p>
-            <v-btn depressed large href="/about" small>Mehr erfahren...</v-btn>
+            <v-btn depressed large href="/about" small>Über das Projekt</v-btn>
           </div>
         </div>
       </v-col>
