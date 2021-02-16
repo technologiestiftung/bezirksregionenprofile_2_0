@@ -1,13 +1,13 @@
 <template>
   <div>
-    <!-- breadcrumbs only necessary for the app with whole Berlin. Not with single 'Bezirke' -->
-    <!--<v-breadcrumbs :items="breadcrumbItems" large></v-breadcrumbs>-->
+    <v-breadcrumbs :items="breadcrumbItems" large></v-breadcrumbs>
 
     <page-header></page-header>
 
     <div class="btn-container">
-      <v-btn to="/" color="primary" nuxt> <v-icon class="mr-3">mdi-arrow-left</v-icon>Zurück zur Übersicht </v-btn>
+      <v-btn :to="bzUrl" color="primary" nuxt> <v-icon class="mr-3">mdi-arrow-left</v-icon>Zurück zur Übersicht </v-btn>
     </div>
+
     <v-row>
       <v-col cols="12">
         <intro-bz :data="bzrOverview" type="Bezirksregion"></intro-bz>
@@ -100,9 +100,6 @@ export default {
   },
   computed: {
     ...mapState(['bzBzrPrData', 'themen', 'currentBz', 'currentBzr']),
-    bzUrl() {
-      return '/' + this.currentBz.url
-    },
     breadcrumbItems() {
       const a = []
       a.push({
