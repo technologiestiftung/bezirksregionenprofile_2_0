@@ -1,7 +1,7 @@
 // import colors from 'vuetify/es5/util/colors'
 // import axios from 'axios'
-// import fetch from 'node-fetch'
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
+// const fetch = require('node-fetch')
 export default {
   vue: {
     config: {
@@ -39,7 +39,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: '/img/favicon.ico'
       }
     ]
   },
