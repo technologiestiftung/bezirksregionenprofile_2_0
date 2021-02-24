@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      colorPalette: ['#1E3791', '#04A6F0 ', '#64B9E6', '#E60032', '#ff4d73', '#ff99af', '#999999']
+      colorPalette: ['#1e3791', '#04a6f0', '#64b9e6', '#e60032', '#ff4d73', '#ff99af', '#999999']
     }
   },
   computed: {
@@ -38,8 +38,8 @@ export default {
                 r.datasets.push({
                   data: [element[key]],
                   label: key,
-                  borderColor: this.colorPalette[i],
-                  backgroundColor: this.colorPalette[i],
+                  borderColor: this.colorPalette[i].trim(),
+                  backgroundColor: this.colorPalette[i].trim(),
                   fill: false
                 })
               } else {
