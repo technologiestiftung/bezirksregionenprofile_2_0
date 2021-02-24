@@ -24,7 +24,7 @@ Vue.component('my-line', {
   }
 })
 Vue.component('my-bar', {
-  extends: Bar,
+  mixins: [Bar],
   props: {
     data: {
       type: Object,
