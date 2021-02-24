@@ -38,6 +38,6 @@
     "eslint-plugin-prettier": "3.1.1",
     "jest": "26.0.1",
     "prettier": "1.19.1",
-    "vue-jest": "4.0.0-beta.2"
+    "vue-jest": "^4.0.0"
   }
 }
