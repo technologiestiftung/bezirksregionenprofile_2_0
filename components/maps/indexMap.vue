@@ -206,8 +206,7 @@ export default {
         'Steglitz-Zehlendorf',
         'Reinickendorf',
         'Mitte',
-        'Charlottenburg-Wilmersdorf',
-        'Lichtenberg'
+        'Charlottenburg-Wilmersdorf'
       ]
 
       this.map.on('mousemove', 'fill-light', (e) => {

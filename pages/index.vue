@@ -86,7 +86,7 @@ export default {
         Object.keys(this.bzBzrPrData)
           .sort()
           .forEach((key) => {
-            if (['tempelhofschoeneberg', 'marzahnhellersdorf'].includes(key)) {
+            if (['tempelhofschoeneberg', 'marzahnhellersdorf', 'lichtenberg'].includes(key)) {
               ordered[key] = this.bzBzrPrData[key]
             }
           })
