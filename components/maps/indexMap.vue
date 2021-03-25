@@ -203,7 +203,6 @@ export default {
         'Friedrichshain-Kreuzberg',
         'Pankow',
         'Treptow-Köpenick',
-        'Steglitz-Zehlendorf',
         'Reinickendorf',
         'Mitte',
         'Charlottenburg-Wilmersdorf'
