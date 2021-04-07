@@ -6,6 +6,6 @@ services:
     env: static
     staticPublishPath: dist
     plan: starter
-    pullRequestPreviewsEnabled: true # optional
+    pullRequestPreviewsEnabled: false # optional
     previewPlan: starter
     buildCommand: npm run build
